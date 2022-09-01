@@ -1,0 +1,154 @@
+[0.000000] (-) TimerEvent: {}
+[0.000647] (basic_mobile_robot) JobQueued: {'identifier': 'basic_mobile_robot', 'dependencies': OrderedDict()}
+[0.000926] (controllers) JobQueued: {'identifier': 'controllers', 'dependencies': OrderedDict()}
+[0.000996] (basic_mobile_robot) JobStarted: {'identifier': 'basic_mobile_robot'}
+[0.054882] (controllers) JobStarted: {'identifier': 'controllers'}
+[0.084169] (-) TimerEvent: {}
+[0.115434] (basic_mobile_robot) JobProgress: {'identifier': 'basic_mobile_robot', 'progress': 'cmake'}
+[0.121491] (basic_mobile_robot) JobProgress: {'identifier': 'basic_mobile_robot', 'progress': 'build'}
+[0.123550] (basic_mobile_robot) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/diego/Workspaces/dev_ws/src/build/basic_mobile_robot', '--', '-j2', '-l2'], 'cwd': '/home/diego/Workspaces/dev_ws/src/build/basic_mobile_robot', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'diego'), ('SSH_AGENT_PID', '1594'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/diego'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1377'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/home/diego/dev_ws'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'diego'), ('JOURNAL_STREAM', '8:34436'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'diego'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/diego/Workspaces/dev_ws/src/basic_mobile_robot/models/:/home/diego/Workspaces/ros2_control_diffbot_ws/src/ros2_control_demos/ros2_control_demo_description/diffbot_description/'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/diego/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/diego-VirtualBox:@/tmp/.ICE-unix/1640,unix/diego-VirtualBox:/tmp/.ICE-unix/1640'), ('INVOCATION_ID', '802ba2475dbd453f8774df08ecfcb6da'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/06506110_acbb_4536_ab29_dcb617654f4f'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.88'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/diego/Workspaces/dev_ws/src/build/basic_mobile_robot'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.185816] (-) TimerEvent: {}
+[0.287432] (-) TimerEvent: {}
+[0.392790] (-) TimerEvent: {}
+[0.495998] (-) TimerEvent: {}
+[0.598982] (-) TimerEvent: {}
+[0.699528] (-) TimerEvent: {}
+[0.801444] (-) TimerEvent: {}
+[0.902896] (-) TimerEvent: {}
+[1.003422] (-) TimerEvent: {}
+[1.104526] (-) TimerEvent: {}
+[1.205685] (-) TimerEvent: {}
+[1.306353] (-) TimerEvent: {}
+[1.407056] (-) TimerEvent: {}
+[1.507699] (-) TimerEvent: {}
+[1.613312] (-) TimerEvent: {}
+[1.636983] (basic_mobile_robot) CommandEnded: {'returncode': 0}
+[1.713997] (-) TimerEvent: {}
+[1.815538] (-) TimerEvent: {}
+[1.917600] (-) TimerEvent: {}
+[1.955583] (basic_mobile_robot) JobProgress: {'identifier': 'basic_mobile_robot', 'progress': 'install'}
+[2.022398] (-) TimerEvent: {}
+[2.077577] (basic_mobile_robot) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/diego/Workspaces/dev_ws/src/build/basic_mobile_robot'], 'cwd': '/home/diego/Workspaces/dev_ws/src/build/basic_mobile_robot', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'diego'), ('SSH_AGENT_PID', '1594'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/diego'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1377'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/home/diego/dev_ws'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'diego'), ('JOURNAL_STREAM', '8:34436'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'diego'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/diego/Workspaces/dev_ws/src/basic_mobile_robot/models/:/home/diego/Workspaces/ros2_control_diffbot_ws/src/ros2_control_demos/ros2_control_demo_description/diffbot_description/'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/diego/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/diego-VirtualBox:@/tmp/.ICE-unix/1640,unix/diego-VirtualBox:/tmp/.ICE-unix/1640'), ('INVOCATION_ID', '802ba2475dbd453f8774df08ecfcb6da'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/06506110_acbb_4536_ab29_dcb617654f4f'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.88'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/diego/Workspaces/dev_ws/src/build/basic_mobile_robot'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[2.123406] (-) TimerEvent: {}
+[2.178945] (basic_mobile_robot) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[2.180408] (basic_mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/diego/Workspaces/dev_ws/src/install/basic_mobile_robot/share/basic_mobile_robot/config\n'}
+[2.186120] (basic_mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/diego/Workspaces/dev_ws/src/install/basic_mobile_robot/share/basic_mobile_robot/launch\n'}
+[2.187405] (basic_mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/diego/Workspaces/dev_ws/src/install/basic_mobile_robot/share/basic_mobile_robot/launch/basic_mobile_bot_v1.launch.py\n'}
+[2.188273] (basic_mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/diego/Workspaces/dev_ws/src/install/basic_mobile_robot/share/basic_mobile_robot/launch/basic_mobile_bot_v4.launch.py\n'}
+[2.188917] (basic_mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/diego/Workspaces/dev_ws/src/install/basic_mobile_robot/share/basic_mobile_robot/launch/basic_mobile_bot_v2.launch.py\n'}
+[2.189395] (basic_mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/diego/Workspaces/dev_ws/src/install/basic_mobile_robot/share/basic_mobile_robot/launch/__pycache__\n'}
+[2.190220] (basic_mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/diego/Workspaces/dev_ws/src/install/basic_mobile_robot/share/basic_mobile_robot/launch/__pycache__/basic_mobile_bot_v1.launch.cpython-38.pyc\n'}
+[2.192248] (basic_mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/diego/Workspaces/dev_ws/src/install/basic_mobile_robot/share/basic_mobile_robot/maps\n'}
+[2.193834] (basic_mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/diego/Workspaces/dev_ws/src/install/basic_mobile_robot/share/basic_mobile_robot/meshes\n'}
+[2.194985] (basic_mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/diego/Workspaces/dev_ws/src/install/basic_mobile_robot/share/basic_mobile_robot/meshes/arm_base.stl\n'}
+[2.195832] (basic_mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/diego/Workspaces/dev_ws/src/install/basic_mobile_robot/share/basic_mobile_robot/meshes/wrist.stl\n'}
+[2.196841] (basic_mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/diego/Workspaces/dev_ws/src/install/basic_mobile_robot/share/basic_mobile_robot/meshes/bicep.stl\n'}
+[2.199253] (basic_mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/diego/Workspaces/dev_ws/src/install/basic_mobile_robot/share/basic_mobile_robot/meshes/elbow.stl\n'}
+[2.200838] (basic_mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/diego/Workspaces/dev_ws/src/install/basic_mobile_robot/share/basic_mobile_robot/meshes/robot_base.stl\n'}
+[2.203465] (basic_mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/diego/Workspaces/dev_ws/src/install/basic_mobile_robot/share/basic_mobile_robot/meshes/wheel.stl\n'}
+[2.204050] (basic_mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/diego/Workspaces/dev_ws/src/install/basic_mobile_robot/share/basic_mobile_robot/meshes/Chasis.stl\n'}
+[2.204590] (basic_mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/diego/Workspaces/dev_ws/src/install/basic_mobile_robot/share/basic_mobile_robot/models\n'}
+[2.209929] (basic_mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/diego/Workspaces/dev_ws/src/install/basic_mobile_robot/share/basic_mobile_robot/models/basic_mobile_bot_description\n'}
+[2.216740] (basic_mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/diego/Workspaces/dev_ws/src/install/basic_mobile_robot/share/basic_mobile_robot/models/basic_mobile_bot_description/orignial.txt\n'}
+[2.220612] (basic_mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/diego/Workspaces/dev_ws/src/install/basic_mobile_robot/share/basic_mobile_robot/models/basic_mobile_bot_description/model1.sdf\n'}
+[2.221028] (basic_mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/diego/Workspaces/dev_ws/src/install/basic_mobile_robot/share/basic_mobile_robot/models/basic_mobile_bot_description/meshes\n'}
+[2.221232] (basic_mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/diego/Workspaces/dev_ws/src/install/basic_mobile_robot/share/basic_mobile_robot/models/basic_mobile_bot_description/meshes/arm_base.stl\n'}
+[2.221410] (basic_mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/diego/Workspaces/dev_ws/src/install/basic_mobile_robot/share/basic_mobile_robot/models/basic_mobile_bot_description/meshes/wrist.stl\n'}
+[2.221582] (basic_mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/diego/Workspaces/dev_ws/src/install/basic_mobile_robot/share/basic_mobile_robot/models/basic_mobile_bot_description/meshes/bicep.stl\n'}
+[2.221749] (basic_mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/diego/Workspaces/dev_ws/src/install/basic_mobile_robot/share/basic_mobile_robot/models/basic_mobile_bot_description/meshes/elbow.stl\n'}
+[2.228248] (-) TimerEvent: {}
+[2.236932] (basic_mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/diego/Workspaces/dev_ws/src/install/basic_mobile_robot/share/basic_mobile_robot/models/basic_mobile_bot_description/meshes/robot_base.stl\n'}
+[2.237380] (basic_mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/diego/Workspaces/dev_ws/src/install/basic_mobile_robot/share/basic_mobile_robot/models/basic_mobile_bot_description/meshes/wheel.stl\n'}
+[2.237776] (basic_mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/diego/Workspaces/dev_ws/src/install/basic_mobile_robot/share/basic_mobile_robot/models/basic_mobile_bot_description/meshes/Chasis.stl\n'}
+[2.237960] (basic_mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/diego/Workspaces/dev_ws/src/install/basic_mobile_robot/share/basic_mobile_robot/models/basic_mobile_bot_description/model.config\n'}
+[2.238131] (basic_mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/diego/Workspaces/dev_ws/src/install/basic_mobile_robot/share/basic_mobile_robot/models/basic_mobile_bot_description/model.sdf\n'}
+[2.238305] (basic_mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/diego/Workspaces/dev_ws/src/install/basic_mobile_robot/share/basic_mobile_robot/models/basic_mobile_bot_v1.urdf\n'}
+[2.238595] (basic_mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/diego/Workspaces/dev_ws/src/install/basic_mobile_robot/share/basic_mobile_robot/models/basic_mobile_bot_v2.urdf\n'}
+[2.238789] (basic_mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/diego/Workspaces/dev_ws/src/install/basic_mobile_robot/share/basic_mobile_robot/params\n'}
+[2.238955] (basic_mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/diego/Workspaces/dev_ws/src/install/basic_mobile_robot/share/basic_mobile_robot/rviz\n'}
+[2.239117] (basic_mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/diego/Workspaces/dev_ws/src/install/basic_mobile_robot/share/basic_mobile_robot/rviz/urdf_config.rviz\n'}
+[2.239283] (basic_mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/diego/Workspaces/dev_ws/src/install/basic_mobile_robot/share/basic_mobile_robot/src\n'}
+[2.254428] (basic_mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/diego/Workspaces/dev_ws/src/install/basic_mobile_robot/share/basic_mobile_robot/worlds\n'}
+[2.254767] (basic_mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/diego/Workspaces/dev_ws/src/install/basic_mobile_robot/share/basic_mobile_robot/worlds/basic_mobile_bot_world\n'}
+[2.254994] (basic_mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/diego/Workspaces/dev_ws/src/install/basic_mobile_robot/share/basic_mobile_robot/worlds/basic_mobile_bot_world/smalltown.world\n'}
+[2.261246] (basic_mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/diego/Workspaces/dev_ws/src/install/basic_mobile_robot/share/ament_index/resource_index/package_run_dependencies/basic_mobile_robot\n'}
+[2.261477] (basic_mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/diego/Workspaces/dev_ws/src/install/basic_mobile_robot/share/ament_index/resource_index/parent_prefix_path/basic_mobile_robot\n'}
+[2.261649] (basic_mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/diego/Workspaces/dev_ws/src/install/basic_mobile_robot/share/basic_mobile_robot/environment/ament_prefix_path.sh\n'}
+[2.261817] (basic_mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/diego/Workspaces/dev_ws/src/install/basic_mobile_robot/share/basic_mobile_robot/environment/ament_prefix_path.dsv\n'}
+[2.267431] (basic_mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/diego/Workspaces/dev_ws/src/install/basic_mobile_robot/share/basic_mobile_robot/environment/path.sh\n'}
+[2.288408] (basic_mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/diego/Workspaces/dev_ws/src/install/basic_mobile_robot/share/basic_mobile_robot/environment/path.dsv\n'}
+[2.288790] (basic_mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/diego/Workspaces/dev_ws/src/install/basic_mobile_robot/share/basic_mobile_robot/local_setup.bash\n'}
+[2.288946] (basic_mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/diego/Workspaces/dev_ws/src/install/basic_mobile_robot/share/basic_mobile_robot/local_setup.sh\n'}
+[2.289096] (basic_mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/diego/Workspaces/dev_ws/src/install/basic_mobile_robot/share/basic_mobile_robot/local_setup.zsh\n'}
+[2.289328] (basic_mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/diego/Workspaces/dev_ws/src/install/basic_mobile_robot/share/basic_mobile_robot/local_setup.dsv\n'}
+[2.289552] (basic_mobile_robot) StdoutLine: {'line': b'-- Installing: /home/diego/Workspaces/dev_ws/src/install/basic_mobile_robot/share/basic_mobile_robot/package.dsv\n'}
+[2.289746] (basic_mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/diego/Workspaces/dev_ws/src/install/basic_mobile_robot/share/ament_index/resource_index/packages/basic_mobile_robot\n'}
+[2.289879] (basic_mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/diego/Workspaces/dev_ws/src/install/basic_mobile_robot/share/basic_mobile_robot/cmake/basic_mobile_robotConfig.cmake\n'}
+[2.290015] (basic_mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/diego/Workspaces/dev_ws/src/install/basic_mobile_robot/share/basic_mobile_robot/cmake/basic_mobile_robotConfig-version.cmake\n'}
+[2.290150] (basic_mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/diego/Workspaces/dev_ws/src/install/basic_mobile_robot/share/basic_mobile_robot/package.xml\n'}
+[2.290580] (basic_mobile_robot) CommandEnded: {'returncode': 0}
+[2.337504] (-) TimerEvent: {}
+[2.439909] (-) TimerEvent: {}
+[2.541875] (-) TimerEvent: {}
+[2.643137] (-) TimerEvent: {}
+[2.751358] (-) TimerEvent: {}
+[2.854825] (-) TimerEvent: {}
+[2.890490] (basic_mobile_robot) JobEnded: {'identifier': 'basic_mobile_robot', 'rc': 0}
+[2.959924] (-) TimerEvent: {}
+[3.066383] (-) TimerEvent: {}
+[3.166896] (-) TimerEvent: {}
+[3.268575] (-) TimerEvent: {}
+[3.372447] (-) TimerEvent: {}
+[3.475962] (-) TimerEvent: {}
+[3.581522] (-) TimerEvent: {}
+[3.683071] (-) TimerEvent: {}
+[3.785614] (-) TimerEvent: {}
+[3.889307] (-) TimerEvent: {}
+[3.991357] (-) TimerEvent: {}
+[4.098432] (-) TimerEvent: {}
+[4.199818] (-) TimerEvent: {}
+[4.300928] (-) TimerEvent: {}
+[4.403685] (-) TimerEvent: {}
+[4.472104] (controllers) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../build/controllers', 'build', '--build-base', '/home/diego/Workspaces/dev_ws/src/build/controllers/build', 'install', '--prefix', '/home/diego/Workspaces/dev_ws/src/install/controllers', '--record', '/home/diego/Workspaces/dev_ws/src/build/controllers/install.log', '--single-version-externally-managed'], 'cwd': '/home/diego/Workspaces/dev_ws/src/controllers', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'diego', 'SSH_AGENT_PID': '1594', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib', 'HOME': '/home/diego', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '1377', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_colcon_cd_root': '/home/diego/dev_ws', 'IM_CONFIG_PHASE': '1', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'diego', 'JOURNAL_STREAM': '8:34436', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'diego', 'TERM': 'xterm-256color', 'GAZEBO_MODEL_PATH': ':/home/diego/Workspaces/dev_ws/src/basic_mobile_robot/models/:/home/diego/Workspaces/ros2_control_diffbot_ws/src/ros2_control_demos/ros2_control_demo_description/diffbot_description/', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/foxy/bin:/home/diego/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/diego-VirtualBox:@/tmp/.ICE-unix/1640,unix/diego-VirtualBox:/tmp/.ICE-unix/1640', 'INVOCATION_ID': '802ba2475dbd453f8774df08ecfcb6da', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/06506110_acbb_4536_ab29_dcb617654f4f', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.88', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/foxy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/diego/Workspaces/dev_ws/src/build/controllers', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/diego/Workspaces/dev_ws/src/install/controllers/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'COLCON': '1', 'VTE_VERSION': '6003'}, 'shell': False}
+[4.504827] (-) TimerEvent: {}
+[4.606435] (-) TimerEvent: {}
+[4.709074] (-) TimerEvent: {}
+[4.811510] (-) TimerEvent: {}
+[4.913260] (-) TimerEvent: {}
+[5.016799] (-) TimerEvent: {}
+[5.119583] (-) TimerEvent: {}
+[5.220939] (-) TimerEvent: {}
+[5.322654] (-) TimerEvent: {}
+[5.424204] (-) TimerEvent: {}
+[5.527906] (-) TimerEvent: {}
+[5.634781] (-) TimerEvent: {}
+[5.657267] (controllers) StdoutLine: {'line': b'running egg_info\n'}
+[5.662211] (controllers) StdoutLine: {'line': b'writing ../build/controllers/controllers.egg-info/PKG-INFO\n'}
+[5.666173] (controllers) StdoutLine: {'line': b'writing dependency_links to ../build/controllers/controllers.egg-info/dependency_links.txt\n'}
+[5.669250] (controllers) StdoutLine: {'line': b'writing entry points to ../build/controllers/controllers.egg-info/entry_points.txt\n'}
+[5.671363] (controllers) StdoutLine: {'line': b'writing requirements to ../build/controllers/controllers.egg-info/requires.txt\n'}
+[5.677465] (controllers) StdoutLine: {'line': b'writing top-level names to ../build/controllers/controllers.egg-info/top_level.txt\n'}
+[5.740879] (-) TimerEvent: {}
+[5.841492] (-) TimerEvent: {}
+[5.861601] (controllers) StdoutLine: {'line': b"reading manifest file '../build/controllers/controllers.egg-info/SOURCES.txt'\n"}
+[5.866188] (controllers) StdoutLine: {'line': b"writing manifest file '../build/controllers/controllers.egg-info/SOURCES.txt'\n"}
+[5.867764] (controllers) StdoutLine: {'line': b'running build\n'}
+[5.870363] (controllers) StdoutLine: {'line': b'running build_py\n'}
+[5.871680] (controllers) StdoutLine: {'line': b'copying controllers/simple_controller.py -> /home/diego/Workspaces/dev_ws/src/build/controllers/build/lib/controllers\n'}
+[5.874127] (controllers) StdoutLine: {'line': b'running install\n'}
+[5.878804] (controllers) StdoutLine: {'line': b'running install_lib\n'}
+[5.890548] (controllers) StdoutLine: {'line': b'copying /home/diego/Workspaces/dev_ws/src/build/controllers/build/lib/controllers/simple_controller.py -> /home/diego/Workspaces/dev_ws/src/install/controllers/lib/python3.8/site-packages/controllers\n'}
+[5.898419] (controllers) StdoutLine: {'line': b'byte-compiling /home/diego/Workspaces/dev_ws/src/install/controllers/lib/python3.8/site-packages/controllers/simple_controller.py to simple_controller.cpython-38.pyc\n'}
+[5.908440] (controllers) StdoutLine: {'line': b'running install_data\n'}
+[5.912810] (controllers) StdoutLine: {'line': b'running install_egg_info\n'}
+[5.921233] (controllers) StdoutLine: {'line': b"removing '/home/diego/Workspaces/dev_ws/src/install/controllers/lib/python3.8/site-packages/controllers-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[5.922954] (controllers) StdoutLine: {'line': b'Copying ../build/controllers/controllers.egg-info to /home/diego/Workspaces/dev_ws/src/install/controllers/lib/python3.8/site-packages/controllers-0.0.0-py3.8.egg-info\n'}
+[5.927569] (controllers) StdoutLine: {'line': b'running install_scripts\n'}
+[5.943288] (-) TimerEvent: {}
+[6.013782] (controllers) StdoutLine: {'line': b'Installing simple_controller script to /home/diego/Workspaces/dev_ws/src/install/controllers/lib/controllers\n'}
+[6.016803] (controllers) StdoutLine: {'line': b"writing list of installed files to '/home/diego/Workspaces/dev_ws/src/build/controllers/install.log'\n"}
+[6.043861] (-) TimerEvent: {}
+[6.138321] (controllers) CommandEnded: {'returncode': 0}
+[6.148365] (-) TimerEvent: {}
+[6.186187] (controllers) JobEnded: {'identifier': 'controllers', 'rc': 0}
+[6.190964] (-) EventReactorShutdown: {}

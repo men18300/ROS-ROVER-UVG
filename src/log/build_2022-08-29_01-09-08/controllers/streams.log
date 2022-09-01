@@ -1,0 +1,42 @@
+[2.603s] Invoking command in '/home/diego/Workspaces/dev_ws/src/controllers': PYTHONPATH=/home/diego/Workspaces/dev_ws/src/install/controllers/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/controllers build --build-base /home/diego/Workspaces/dev_ws/src/build/controllers/build install --prefix /home/diego/Workspaces/dev_ws/src/install/controllers --record /home/diego/Workspaces/dev_ws/src/build/controllers/install.log --single-version-externally-managed
+[3.199s] running egg_info
+[3.202s] creating ../build/controllers/controllers.egg-info
+[3.202s] writing ../build/controllers/controllers.egg-info/PKG-INFO
+[3.202s] writing dependency_links to ../build/controllers/controllers.egg-info/dependency_links.txt
+[3.202s] writing entry points to ../build/controllers/controllers.egg-info/entry_points.txt
+[3.202s] writing requirements to ../build/controllers/controllers.egg-info/requires.txt
+[3.203s] writing top-level names to ../build/controllers/controllers.egg-info/top_level.txt
+[3.215s] writing manifest file '../build/controllers/controllers.egg-info/SOURCES.txt'
+[3.302s] reading manifest file '../build/controllers/controllers.egg-info/SOURCES.txt'
+[3.307s] writing manifest file '../build/controllers/controllers.egg-info/SOURCES.txt'
+[3.307s] running build
+[3.309s] running build_py
+[3.310s] creating /home/diego/Workspaces/dev_ws/src/build/controllers/build
+[3.310s] creating /home/diego/Workspaces/dev_ws/src/build/controllers/build/lib
+[3.310s] creating /home/diego/Workspaces/dev_ws/src/build/controllers/build/lib/controllers
+[3.310s] copying controllers/simple_controller.py -> /home/diego/Workspaces/dev_ws/src/build/controllers/build/lib/controllers
+[3.310s] copying controllers/__init__.py -> /home/diego/Workspaces/dev_ws/src/build/controllers/build/lib/controllers
+[3.311s] running install
+[3.312s] running install_lib
+[3.315s] creating /home/diego/Workspaces/dev_ws/src/install/controllers/lib/python3.8/site-packages/controllers
+[3.315s] copying /home/diego/Workspaces/dev_ws/src/build/controllers/build/lib/controllers/simple_controller.py -> /home/diego/Workspaces/dev_ws/src/install/controllers/lib/python3.8/site-packages/controllers
+[3.315s] copying /home/diego/Workspaces/dev_ws/src/build/controllers/build/lib/controllers/__init__.py -> /home/diego/Workspaces/dev_ws/src/install/controllers/lib/python3.8/site-packages/controllers
+[3.316s] byte-compiling /home/diego/Workspaces/dev_ws/src/install/controllers/lib/python3.8/site-packages/controllers/simple_controller.py to simple_controller.cpython-38.pyc
+[3.319s]   File "/home/diego/Workspaces/dev_ws/src/install/controllers/lib/python3.8/site-packages/controllers/simple_controller.py", line 50
+[3.320s]     def subscribe_message(self,msg)
+[3.320s]                                   ^
+[3.321s] SyntaxError: invalid syntax
+[3.321s] 
+[3.323s] byte-compiling /home/diego/Workspaces/dev_ws/src/install/controllers/lib/python3.8/site-packages/controllers/__init__.py to __init__.cpython-38.pyc
+[3.324s] running install_data
+[3.324s] creating /home/diego/Workspaces/dev_ws/src/install/controllers/share/ament_index
+[3.324s] creating /home/diego/Workspaces/dev_ws/src/install/controllers/share/ament_index/resource_index
+[3.324s] creating /home/diego/Workspaces/dev_ws/src/install/controllers/share/ament_index/resource_index/packages
+[3.324s] copying resource/controllers -> /home/diego/Workspaces/dev_ws/src/install/controllers/share/ament_index/resource_index/packages
+[3.324s] copying package.xml -> /home/diego/Workspaces/dev_ws/src/install/controllers/share/controllers
+[3.325s] running install_egg_info
+[3.328s] Copying ../build/controllers/controllers.egg-info to /home/diego/Workspaces/dev_ws/src/install/controllers/lib/python3.8/site-packages/controllers-0.0.0-py3.8.egg-info
+[3.330s] running install_scripts
+[3.380s] Installing simple_controller script to /home/diego/Workspaces/dev_ws/src/install/controllers/lib/controllers
+[3.381s] writing list of installed files to '/home/diego/Workspaces/dev_ws/src/build/controllers/install.log'
+[3.462s] Invoked command in '/home/diego/Workspaces/dev_ws/src/controllers' returned '0': PYTHONPATH=/home/diego/Workspaces/dev_ws/src/install/controllers/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/controllers build --build-base /home/diego/Workspaces/dev_ws/src/build/controllers/build install --prefix /home/diego/Workspaces/dev_ws/src/install/controllers --record /home/diego/Workspaces/dev_ws/src/build/controllers/install.log --single-version-externally-managed

@@ -1,0 +1,29 @@
+[1.946s] Invoking command in '/home/diego/Workspaces/dev_ws/src/controllers': PYTHONPATH=/home/diego/Workspaces/dev_ws/src/install/controllers/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/controllers build --build-base /home/diego/Workspaces/dev_ws/src/build/controllers/build install --prefix /home/diego/Workspaces/dev_ws/src/install/controllers --record /home/diego/Workspaces/dev_ws/src/build/controllers/install.log --single-version-externally-managed
+[2.546s] running egg_info
+[2.548s] writing ../build/controllers/controllers.egg-info/PKG-INFO
+[2.549s] writing dependency_links to ../build/controllers/controllers.egg-info/dependency_links.txt
+[2.550s] writing entry points to ../build/controllers/controllers.egg-info/entry_points.txt
+[2.551s] writing requirements to ../build/controllers/controllers.egg-info/requires.txt
+[2.551s] writing top-level names to ../build/controllers/controllers.egg-info/top_level.txt
+[2.647s] reading manifest file '../build/controllers/controllers.egg-info/SOURCES.txt'
+[2.649s] writing manifest file '../build/controllers/controllers.egg-info/SOURCES.txt'
+[2.649s] running build
+[2.649s] running build_py
+[2.650s] copying controllers/simple_controller.py -> /home/diego/Workspaces/dev_ws/src/build/controllers/build/lib/controllers
+[2.650s] running install
+[2.653s] running install_lib
+[2.655s] copying /home/diego/Workspaces/dev_ws/src/build/controllers/build/lib/controllers/simple_controller.py -> /home/diego/Workspaces/dev_ws/src/install/controllers/lib/python3.8/site-packages/controllers
+[2.657s] byte-compiling /home/diego/Workspaces/dev_ws/src/install/controllers/lib/python3.8/site-packages/controllers/simple_controller.py to simple_controller.cpython-38.pyc
+[2.661s]   File "/home/diego/Workspaces/dev_ws/src/install/controllers/lib/python3.8/site-packages/controllers/simple_controller.py", line 86
+[2.661s]     eP = math.sqrt(inc_x²+inc_y²)
+[2.661s]                         ^
+[2.662s] SyntaxError: invalid character in identifier
+[2.662s] 
+[2.663s] running install_data
+[2.663s] running install_egg_info
+[2.674s] removing '/home/diego/Workspaces/dev_ws/src/install/controllers/lib/python3.8/site-packages/controllers-0.0.0-py3.8.egg-info' (and everything under it)
+[2.674s] Copying ../build/controllers/controllers.egg-info to /home/diego/Workspaces/dev_ws/src/install/controllers/lib/python3.8/site-packages/controllers-0.0.0-py3.8.egg-info
+[2.674s] running install_scripts
+[2.719s] Installing simple_controller script to /home/diego/Workspaces/dev_ws/src/install/controllers/lib/controllers
+[2.720s] writing list of installed files to '/home/diego/Workspaces/dev_ws/src/build/controllers/install.log'
+[2.794s] Invoked command in '/home/diego/Workspaces/dev_ws/src/controllers' returned '0': PYTHONPATH=/home/diego/Workspaces/dev_ws/src/install/controllers/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/controllers build --build-base /home/diego/Workspaces/dev_ws/src/build/controllers/build install --prefix /home/diego/Workspaces/dev_ws/src/install/controllers --record /home/diego/Workspaces/dev_ws/src/build/controllers/install.log --single-version-externally-managed
