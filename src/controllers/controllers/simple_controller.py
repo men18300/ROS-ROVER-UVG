@@ -46,7 +46,7 @@ class ControladorVelocidad(Node):
         
         speed=Twist()
         goal=Point()
-        goal.x=0.0
+        goal.x=1.0
         goal.y=-4.0
 
 
