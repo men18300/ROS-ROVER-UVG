@@ -25,8 +25,8 @@ kdO = 0
 EO = 0
 eO_1 = 0
 
-v0 = 0.9
-alpha = 0.3
+v0 = 0.8
+alpha = 0.2
 
 class ControladorVelocidad(Node):
 
@@ -46,8 +46,18 @@ class ControladorVelocidad(Node):
         
         speed=Twist()
         goal=Point()
-        goal.x=1.0
-        goal.y=-4.0
+       # goal.x=8.0
+       # goal.y=-7.0
+       
+        goal.x=-5.3
+        goal.y=-12.0
+
+
+        #goal.x=8.0
+        #goal.y=-3.0
+        
+        #goal.x=8.0
+        #goal.y=-2.0
 
 
     def publish_message(self):   
