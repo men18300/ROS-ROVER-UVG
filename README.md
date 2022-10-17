@@ -1,23 +1,6 @@
----
-title: "Offensive Security Certified Professional Exam Report"
-author: ["student@youremailaddress.com", "OSID: XXXX"]
-date: "2021-03-25"
-subject: "Markdown"
-keywords: [Markdown, Example]
-subtitle: "OSCP Exam Report"
-lang: "en"
-titlepage: true
-titlepage-color: "DC143C"
-titlepage-text-color: "FFFFFF"
-titlepage-rule-color: "FFFFFF"
-titlepage-rule-height: 2
-book: true
-classoption: oneside
-code-block-font-size: \scriptsize
----
-# Offensive Security Lab and Exam Penetration Test Report
+# Integración de Robot Operating System (ROS) dentro del ROVER UVG
 
-## Introduction
+## Introducción
 
 The Offensive Security Lab and Exam penetration test report contains all efforts that were conducted in order to pass the Offensive Security course.
 This report should contain all lab data in the report template format as well as all items that were used to pass the overall exam.
