@@ -224,5 +224,8 @@ Offensive Security should not have to remove any user accounts or services from 
 
 This section is placed for any additional items that were not mentioned in the overall report.
 
- Dentro de código se encuentran:
+Dentro de código se encuentran:
+
 ![Alt Text](https://thumbs.gfycat.com/SizzlingHilariousCopperhead-size_restricted.gif)
+![Alt Text](https://www.tkjelectronics.dk/uploads/Rear_Wheel_Pose_Published.gif)
+
