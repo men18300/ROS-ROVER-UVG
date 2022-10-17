@@ -8,35 +8,23 @@ En el caso de la Universidad del Valle de Guatemala, se cuenta con el proyecto d
 
 Para validar la correcta integración de los módulos externos se realizaron simulaciones realistas en Gazebo. Estas simulaciones abarcaron distintas clases de experimentos dentro de un mundo virtual, como control punto a punto, SLAM, entre otros. Posteriormente se realizó la selección de la computadora central adecuada que permitiera la integración de todos los módulos externos junto a ROS dentro del robot físico. Para poder validar la implementación física se realizaron pruebas simples dentro de una plataforma que nos permitió verificar la integración de los módulos y la funcionalidad de los controladores realizados en la etapa de simulación.
 
-## Objectivo
+## Documentación y Código
 
-The objective of this assessment is to perform an internal penetration test against the Offensive Security Lab and Exam network.
-The student is tasked with following methodical approach in obtaining access to the objective goals.
-This test should simulate an actual penetration test and how you would start from beginning to end, including the overall report.
-An example page has already been created for you at the latter portions of this document that should give you ample information on what is expected to pass this course.
-Use the sample report as a guideline to get you through the reporting.
+En el presente repositorio se encuentras las siguientes carpetas:
 
-## Requirements
+- Documentos, en donde se encuentran guías de instalación y demás información necesaria para poder utilizar los códigos correspondientes.
+- Código, se encuentra el código tanto para la simulación del proyecto como para la implementación física.
 
-The student will be required to fill out this penetration testing report fully and to include the following sections:
+# Simulación en Gazebo
 
-- Overall High-Level Summary and Recommendations (non-technical)
-- Methodology walkthrough and detailed outline of steps taken
-- Each finding with included screenshots, walkthrough, sample code, and proof.txt if applicable.
-- Any additional items that were not included
+Gazebo es un simulador 3D multi-robot con dinámica. Ofrece la posibilidad de simular con precisión y eficiencia, diversidad de robots, objetos y sensores en ambientes complejos interiores y exteriores. Gazebo genera, tanto la realimentación realista de sensores, como las interacciones entre los objetos físicamente plausibles, incluida una simulación precisa de la física de cuerpo rígido. Gazebo se instala en conjunto a ROS cuando se descarga la versión de escritorio.
 
-# Sample Report - High-Level Summary
+A continuación se puede observar alguans simulaciones realizadas en Gazebo:
 
-John Doe was tasked with performing an internal penetration test towards Offensive Security Labs.
-An internal penetration test is a dedicated attack against internally connected systems.
-The focus of this test is to perform attacks, similar to those of a hacker and attempt to infiltrate Offensive Security's internal lab systems - the THINC.local domain.
-John's overall objective was to evaluate the network, identify systems, and exploit flaws while reporting the findings back to Offensive Security.
+![Alt Text](https://thumbs.gfycat.com/SizzlingHilariousCopperhead-size_restricted.gif) ![Alt Text](https://blog.pal-robotics.com/wp-content/uploads/2016/12/TIAGogmapping.gif)
+![Alt Text](https://www.tkjelectronics.dk/uploads/Rear_Wheel_Pose_Published.gif)
 
-When performing the internal penetration test, there were several alarming vulnerabilities that were identified on Offensive Security's network.
-When performing the attacks, John was able to gain access to multiple machines, primarily due to outdated patches and poor security configurations.
-During the testing, John had administrative level access to multiple systems.
-All systems were successfully exploited and access granted.
-These systems as well as a brief description on how access was obtained are listed below:
+
 
 - Lab Trophy 1 - Got in through X
 - Lab Trophy 2 - Got in through X
@@ -227,6 +215,4 @@ This section is placed for any additional items that were not mentioned in the o
 
 Dentro de código se encuentran:
 
-![Alt Text](https://thumbs.gfycat.com/SizzlingHilariousCopperhead-size_restricted.gif) ![Alt Text](https://blog.pal-robotics.com/wp-content/uploads/2016/12/TIAGogmapping.gif)
-![Alt Text](https://www.tkjelectronics.dk/uploads/Rear_Wheel_Pose_Published.gif)
 
