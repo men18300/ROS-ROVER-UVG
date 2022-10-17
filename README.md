@@ -15,9 +15,19 @@ En el presente repositorio se encuentras las siguientes carpetas:
 - Documentos, en donde se encuentran guías útiles para la creación de programos en ROS y demás información necesaria para poder utilizar los códigos correspondientes.
 - Código, se encuentra el código tanto para la simulación del proyecto como para la implementación física.
 
-## Instalación de ROS
-Para poder ejecutar los programas de ROS es necesario realizar la instalación de dicho sistema operativo. Para ello se utilizó la siguiente guía de instalación: 
-https://docs.ros.org/en/foxy/Installation.html
+## Instalación de ROS en una máquina virtual
+Para poder ejecutar los programas de ROS fue necesario tener una máquina virtual con Linux. Fue por ello que se descargó VirtualBox del siguiente enlace: https://www.virtualbox.org/es.
+
+---
+Sistema Operativo: "Ubuntu (64 bits)"
+RAM: "8192 MB"
+Procesadores: "2"
+Almacenamiento: "30 GB"
+code-block-font-size: \scriptsize
+---
+
+Posteriomente se realizó la instalación de ROS sobre dicha máquina virtual. Para ello se utilizó la siguiente guía de instalación: 
+https://docs.ros.org/en/foxy/Installation.html. 
 
 ## Simulación en Gazebo
 
