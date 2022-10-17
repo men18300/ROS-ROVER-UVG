@@ -2,12 +2,13 @@
 
 ## Introducción
 
-The Offensive Security Lab and Exam penetration test report contains all efforts that were conducted in order to pass the Offensive Security course.
-This report should contain all lab data in the report template format as well as all items that were used to pass the overall exam.
-This report will be graded from a standpoint of correctness and fullness to all aspects of the lab and exam.
-The purpose of this report is to ensure that the student has a full understanding of penetration testing methodologies as well as the technical knowledge to pass the qualifications for the Offensive Security Certified Professional.
+ROS proporciona funcionalidad para la abstracción de hardware, controladores para múltiples dispositivos, comunicación entre procesos dentro de varias máquinas, herramientas para simulación, visualización, entre otros. La característica clave de ROS es cómo se ejecuta el software y cómo se comunica, debido a que permite diseñar software complejo sin saber cómo funciona cierto hardware. Es por ello que gran número de robots que se fabrican hoy en día, utiliza este sistema operativo para su funcionamiento. 
 
-## Objective
+En el caso de la Universidad del Valle de Guatemala, se cuenta con el proyecto del robot explorador modular que ha tenido sus últimas modificaciones hasta el año 2021 como se muestra en \cite{hectorSagastume}. Aunque hasta el momento, no se ha logrado que el robot logre moverse con facilidad ni tampoco pueda realizar más de una función. Para lograr que el Rover UVG pueda ampliar sus aplicaciones, se cuenta con distintos módulos externos, entre ellos se encuentran \textit{encoders} en las orugas del robot, módulos DMW1001, sistema de captura de movimiento Optitrack, LIDAR y cámaras. Con dichos módulos se planteó la propuesta de integración junto a ROS, de forma que el robot tenga sensores de localización, visión y mapeo. 
+
+Para validar la correcta integración de los módulos externos se realizaron simulaciones realistas en Gazebo. Estas simulaciones abarcaron distintas clases de experimentos dentro de un mundo virtual, como control punto a punto, SLAM, entre otros. Posteriormente se realizó la selección de la computadora central adecuada que permitiera la integración de todos los módulos externos junto a ROS dentro del robot físico. Para poder validar la implementación física se realizaron pruebas simples dentro de una plataforma que nos permitió verificar la integración de los módulos y la funcionalidad de los controladores realizados en la etapa de simulación.
+
+## Objectivo
 
 The objective of this assessment is to perform an internal penetration test against the Offensive Security Lab and Exam network.
 The student is tasked with following methodical approach in obtaining access to the objective goals.
