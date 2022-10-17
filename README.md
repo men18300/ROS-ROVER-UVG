@@ -226,6 +226,6 @@ This section is placed for any additional items that were not mentioned in the o
 
 Dentro de código se encuentran:
 
-![Alt Text](https://thumbs.gfycat.com/SizzlingHilariousCopperhead-size_restricted.gif)
+![Alt Text](https://thumbs.gfycat.com/SizzlingHilariousCopperhead-size_restricted.gif) ![Alt Text](https://blog.pal-robotics.com/wp-content/uploads/2016/12/TIAGogmapping.gif)
 ![Alt Text](https://www.tkjelectronics.dk/uploads/Rear_Wheel_Pose_Published.gif)
 
