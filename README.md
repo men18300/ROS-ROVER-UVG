@@ -4,7 +4,7 @@
 
 ROS proporciona funcionalidad para la abstracción de hardware, controladores para múltiples dispositivos, comunicación entre procesos dentro de varias máquinas, herramientas para simulación, visualización, entre otros. La característica clave de ROS es cómo se ejecuta el software y cómo se comunica, debido a que permite diseñar software complejo sin saber cómo funciona cierto hardware. Es por ello que gran número de robots que se fabrican hoy en día, utiliza este sistema operativo para su funcionamiento. 
 
-En el caso de la Universidad del Valle de Guatemala, se cuenta con el proyecto del robot explorador modular que ha tenido sus últimas modificaciones hasta el año 2021 como se muestra en \cite{hectorSagastume}. Aunque hasta el momento, no se ha logrado que el robot logre moverse con facilidad ni tampoco pueda realizar más de una función. Para lograr que el Rover UVG pueda ampliar sus aplicaciones, se cuenta con distintos módulos externos, entre ellos se encuentran \textit{encoders} en las orugas del robot, módulos DMW1001, sistema de captura de movimiento Optitrack, LIDAR y cámaras. Con dichos módulos se planteó la propuesta de integración junto a ROS, de forma que el robot tenga sensores de localización, visión y mapeo. 
+En el caso de la Universidad del Valle de Guatemala, se cuenta con el proyecto del robot explorador modular que ha tenido sus últimas modificaciones hasta el año 2021. Aunque hasta el momento, no se ha logrado que el robot logre moverse con facilidad ni tampoco pueda realizar más de una función. Para lograr que el Rover UVG pueda ampliar sus aplicaciones, se cuenta con distintos módulos externos, entre ellos se encuentran encoders en las orugas del robot, módulos DMW1001, sistema de captura de movimiento Optitrack, LIDAR y cámaras. Con dichos módulos se planteó la propuesta de integración junto a ROS, de forma que el robot tenga sensores de localización, visión y mapeo. 
 
 Para validar la correcta integración de los módulos externos se realizaron simulaciones realistas en Gazebo. Estas simulaciones abarcaron distintas clases de experimentos dentro de un mundo virtual, como control punto a punto, SLAM, entre otros. Posteriormente se realizó la selección de la computadora central adecuada que permitiera la integración de todos los módulos externos junto a ROS dentro del robot físico. Para poder validar la implementación física se realizaron pruebas simples dentro de una plataforma que nos permitió verificar la integración de los módulos y la funcionalidad de los controladores realizados en la etapa de simulación.
 
@@ -12,10 +12,14 @@ Para validar la correcta integración de los módulos externos se realizaron sim
 
 En el presente repositorio se encuentras las siguientes carpetas:
 
-- Documentos, en donde se encuentran guías de instalación y demás información necesaria para poder utilizar los códigos correspondientes.
+- Documentos, en donde se encuentran guías útiles para la creación de programos en ROS y demás información necesaria para poder utilizar los códigos correspondientes.
 - Código, se encuentra el código tanto para la simulación del proyecto como para la implementación física.
 
-# Simulación en Gazebo
+## Instalación de ROS
+Para poder ejecutar los programas de ROS es necesario realizar la instalación de dicho sistema operativo. Para ello se utilizó la siguiente guía de instalación: 
+https://docs.ros.org/en/foxy/Installation.html
+
+## Simulación en Gazebo
 
 Gazebo es un simulador 3D multi-robot con dinámica. Ofrece la posibilidad de simular con precisión y eficiencia, diversidad de robots, objetos y sensores en ambientes complejos interiores y exteriores. Gazebo genera, tanto la realimentación realista de sensores, como las interacciones entre los objetos físicamente plausibles, incluida una simulación precisa de la física de cuerpo rígido. Gazebo se instala en conjunto a ROS cuando se descarga la versión de escritorio.
 
