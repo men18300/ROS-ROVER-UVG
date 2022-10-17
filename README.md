@@ -32,6 +32,23 @@ book: true
 classoption: oneside
 code-block-font-size: \scriptsize
 ---
+---
+title: "Offensive Security Exploit Developer Exam Report"
+author: ["student@youremailaddress.com", "OSID: XXXX"]
+date: "2021-03-25"
+subject: "Markdown"
+keywords: [reversing, exploit-dev, shellcode]
+subtitle: "OSED Exam Report"
+lang: "en"
+titlepage: true
+titlepage-color: "1E90FF"
+titlepage-text-color: "FFFAFA"
+titlepage-rule-color: "FFFAFA"
+titlepage-rule-height: 2
+book: true
+classoption: oneside
+code-block-font-size: \scriptsize
+---
 
 Posteriomente se realizó la instalación de ROS sobre dicha máquina virtual. Para ello se utilizó la siguiente guía de instalación: 
 https://docs.ros.org/en/foxy/Installation.html. 
