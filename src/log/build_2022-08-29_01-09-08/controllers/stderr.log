@@ -1,5 +1,0 @@
-  File "/home/diego/Workspaces/dev_ws/src/install/controllers/lib/python3.8/site-packages/controllers/simple_controller.py", line 50
-    def subscribe_message(self,msg)
-                                  ^
-SyntaxError: invalid syntax
-

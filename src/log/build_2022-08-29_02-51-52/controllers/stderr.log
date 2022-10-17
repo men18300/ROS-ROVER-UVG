@@ -1,5 +1,0 @@
-  File "/home/diego/Workspaces/dev_ws/src/install/controllers/lib/python3.8/site-packages/controllers/simple_controller.py", line 86
-    eP = math.sqrt(inc_x²+inc_y²)
-                        ^
-SyntaxError: invalid character in identifier
-
