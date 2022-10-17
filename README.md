@@ -23,6 +23,13 @@ Sistema Operativo: "Ubuntu (64 bits)"
 RAM: "8192 MB"
 Procesadores: "2"
 Almacenamiento: "30 GB"
+titlepage: true
+titlepage-color: "1E90FF"
+titlepage-text-color: "FFFAFA"
+titlepage-rule-color: "FFFAFA"
+titlepage-rule-height: 2
+book: true
+classoption: oneside
 code-block-font-size: \scriptsize
 ---
 
