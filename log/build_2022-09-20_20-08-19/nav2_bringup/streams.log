@@ -1,0 +1,44 @@
+[0.118s] Invoking command in '/home/diego/Workspaces/dev_ws/build/nav2_bringup': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/diego/Workspaces/dev_ws/build/nav2_bringup -- -j2 -l2
+[0.226s] Invoked command in '/home/diego/Workspaces/dev_ws/build/nav2_bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/diego/Workspaces/dev_ws/build/nav2_bringup -- -j2 -l2
+[0.297s] Invoking command in '/home/diego/Workspaces/dev_ws/build/nav2_bringup': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/diego/Workspaces/dev_ws/build/nav2_bringup
+[0.320s] -- Install configuration: "Release"
+[0.321s] -- Up-to-date: /home/diego/Workspaces/dev_ws/install/nav2_bringup/share/nav2_bringup/launch
+[0.321s] -- Up-to-date: /home/diego/Workspaces/dev_ws/install/nav2_bringup/share/nav2_bringup/launch/bringup_launch.py
+[0.322s] -- Up-to-date: /home/diego/Workspaces/dev_ws/install/nav2_bringup/share/nav2_bringup/launch/tb3_simulation_launch.py
+[0.322s] -- Up-to-date: /home/diego/Workspaces/dev_ws/install/nav2_bringup/share/nav2_bringup/launch/rviz_launch.py
+[0.322s] -- Up-to-date: /home/diego/Workspaces/dev_ws/install/nav2_bringup/share/nav2_bringup/launch/localization_launch.py
+[0.322s] -- Up-to-date: /home/diego/Workspaces/dev_ws/install/nav2_bringup/share/nav2_bringup/launch/multi_tb3_simulation_launch.py
+[0.323s] -- Up-to-date: /home/diego/Workspaces/dev_ws/install/nav2_bringup/share/nav2_bringup/launch/slam_launch.py
+[0.323s] -- Up-to-date: /home/diego/Workspaces/dev_ws/install/nav2_bringup/share/nav2_bringup/launch/spawn_tb3_launch.py
+[0.323s] -- Up-to-date: /home/diego/Workspaces/dev_ws/install/nav2_bringup/share/nav2_bringup/launch/navigation_launch.py
+[0.323s] -- Up-to-date: /home/diego/Workspaces/dev_ws/install/nav2_bringup/share/nav2_bringup/maps
+[0.323s] -- Up-to-date: /home/diego/Workspaces/dev_ws/install/nav2_bringup/share/nav2_bringup/maps/turtlebot3_world.pgm
+[0.324s] -- Up-to-date: /home/diego/Workspaces/dev_ws/install/nav2_bringup/share/nav2_bringup/maps/turtlebot3_world.yaml
+[0.324s] -- Up-to-date: /home/diego/Workspaces/dev_ws/install/nav2_bringup/share/nav2_bringup/rviz
+[0.324s] -- Up-to-date: /home/diego/Workspaces/dev_ws/install/nav2_bringup/share/nav2_bringup/rviz/nav2_default_view.rviz
+[0.324s] -- Up-to-date: /home/diego/Workspaces/dev_ws/install/nav2_bringup/share/nav2_bringup/rviz/nav2_namespaced_view.rviz
+[0.324s] -- Up-to-date: /home/diego/Workspaces/dev_ws/install/nav2_bringup/share/nav2_bringup/worlds
+[0.324s] -- Up-to-date: /home/diego/Workspaces/dev_ws/install/nav2_bringup/share/nav2_bringup/worlds/waffle.model
+[0.324s] -- Up-to-date: /home/diego/Workspaces/dev_ws/install/nav2_bringup/share/nav2_bringup/worlds/world_only.model
+[0.325s] -- Up-to-date: /home/diego/Workspaces/dev_ws/install/nav2_bringup/share/nav2_bringup/params
+[0.325s] -- Up-to-date: /home/diego/Workspaces/dev_ws/install/nav2_bringup/share/nav2_bringup/params/nav2_params.yaml
+[0.326s] -- Up-to-date: /home/diego/Workspaces/dev_ws/install/nav2_bringup/share/nav2_bringup/params/nav2_multirobot_params_1.yaml
+[0.326s] -- Up-to-date: /home/diego/Workspaces/dev_ws/install/nav2_bringup/share/nav2_bringup/params/nav2_multirobot_params_2.yaml
+[0.335s] -- Up-to-date: /home/diego/Workspaces/dev_ws/install/nav2_bringup/share/nav2_bringup/urdf
+[0.336s] -- Up-to-date: /home/diego/Workspaces/dev_ws/install/nav2_bringup/share/nav2_bringup/urdf/turtlebot3_waffle.urdf
+[0.336s] -- Up-to-date: /home/diego/Workspaces/dev_ws/install/nav2_bringup/share/ament_index/resource_index/package_run_dependencies/nav2_bringup
+[0.336s] -- Up-to-date: /home/diego/Workspaces/dev_ws/install/nav2_bringup/share/ament_index/resource_index/parent_prefix_path/nav2_bringup
+[0.337s] -- Up-to-date: /home/diego/Workspaces/dev_ws/install/nav2_bringup/share/nav2_bringup/environment/ament_prefix_path.sh
+[0.337s] -- Up-to-date: /home/diego/Workspaces/dev_ws/install/nav2_bringup/share/nav2_bringup/environment/ament_prefix_path.dsv
+[0.337s] -- Up-to-date: /home/diego/Workspaces/dev_ws/install/nav2_bringup/share/nav2_bringup/environment/path.sh
+[0.337s] -- Up-to-date: /home/diego/Workspaces/dev_ws/install/nav2_bringup/share/nav2_bringup/environment/path.dsv
+[0.337s] -- Up-to-date: /home/diego/Workspaces/dev_ws/install/nav2_bringup/share/nav2_bringup/local_setup.bash
+[0.337s] -- Up-to-date: /home/diego/Workspaces/dev_ws/install/nav2_bringup/share/nav2_bringup/local_setup.sh
+[0.337s] -- Up-to-date: /home/diego/Workspaces/dev_ws/install/nav2_bringup/share/nav2_bringup/local_setup.zsh
+[0.338s] -- Up-to-date: /home/diego/Workspaces/dev_ws/install/nav2_bringup/share/nav2_bringup/local_setup.dsv
+[0.338s] -- Installing: /home/diego/Workspaces/dev_ws/install/nav2_bringup/share/nav2_bringup/package.dsv
+[0.338s] -- Up-to-date: /home/diego/Workspaces/dev_ws/install/nav2_bringup/share/ament_index/resource_index/packages/nav2_bringup
+[0.338s] -- Up-to-date: /home/diego/Workspaces/dev_ws/install/nav2_bringup/share/nav2_bringup/cmake/nav2_bringupConfig.cmake
+[0.338s] -- Up-to-date: /home/diego/Workspaces/dev_ws/install/nav2_bringup/share/nav2_bringup/cmake/nav2_bringupConfig-version.cmake
+[0.338s] -- Up-to-date: /home/diego/Workspaces/dev_ws/install/nav2_bringup/share/nav2_bringup/package.xml
+[0.339s] Invoked command in '/home/diego/Workspaces/dev_ws/build/nav2_bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/diego/Workspaces/dev_ws/build/nav2_bringup

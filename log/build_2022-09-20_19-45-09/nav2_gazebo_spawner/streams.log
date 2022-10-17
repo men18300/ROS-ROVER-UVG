@@ -1,0 +1,29 @@
+[2.104s] Invoking command in '/home/diego/Workspaces/dev_ws/src/nav2_bringup/nav2_bringup/nav2_gazebo_spawner': PYTHONPATH=/home/diego/Workspaces/dev_ws/install/nav2_gazebo_spawner/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../../build/nav2_gazebo_spawner build --build-base /home/diego/Workspaces/dev_ws/build/nav2_gazebo_spawner/build install --prefix /home/diego/Workspaces/dev_ws/install/nav2_gazebo_spawner --record /home/diego/Workspaces/dev_ws/build/nav2_gazebo_spawner/install.log --single-version-externally-managed
+[2.675s] running egg_info
+[2.677s] creating ../../../../build/nav2_gazebo_spawner/nav2_gazebo_spawner.egg-info
+[2.677s] writing ../../../../build/nav2_gazebo_spawner/nav2_gazebo_spawner.egg-info/PKG-INFO
+[2.678s] writing dependency_links to ../../../../build/nav2_gazebo_spawner/nav2_gazebo_spawner.egg-info/dependency_links.txt
+[2.679s] writing entry points to ../../../../build/nav2_gazebo_spawner/nav2_gazebo_spawner.egg-info/entry_points.txt
+[2.679s] writing requirements to ../../../../build/nav2_gazebo_spawner/nav2_gazebo_spawner.egg-info/requires.txt
+[2.680s] writing top-level names to ../../../../build/nav2_gazebo_spawner/nav2_gazebo_spawner.egg-info/top_level.txt
+[2.683s] writing manifest file '../../../../build/nav2_gazebo_spawner/nav2_gazebo_spawner.egg-info/SOURCES.txt'
+[2.765s] package init file 'nav2_gazebo_spawner/__init__.py' not found (or not a regular file)
+[2.765s] reading manifest file '../../../../build/nav2_gazebo_spawner/nav2_gazebo_spawner.egg-info/SOURCES.txt'
+[2.767s] writing manifest file '../../../../build/nav2_gazebo_spawner/nav2_gazebo_spawner.egg-info/SOURCES.txt'
+[2.767s] running build
+[2.768s] running build_py
+[2.768s] creating /home/diego/Workspaces/dev_ws/build/nav2_gazebo_spawner/build
+[2.768s] creating /home/diego/Workspaces/dev_ws/build/nav2_gazebo_spawner/build/lib
+[2.769s] creating /home/diego/Workspaces/dev_ws/build/nav2_gazebo_spawner/build/lib/nav2_gazebo_spawner
+[2.769s] copying nav2_gazebo_spawner/nav2_gazebo_spawner.py -> /home/diego/Workspaces/dev_ws/build/nav2_gazebo_spawner/build/lib/nav2_gazebo_spawner
+[2.770s] running install
+[2.775s] running install_lib
+[2.776s] creating /home/diego/Workspaces/dev_ws/install/nav2_gazebo_spawner/lib/python3.8/site-packages/nav2_gazebo_spawner
+[2.777s] copying /home/diego/Workspaces/dev_ws/build/nav2_gazebo_spawner/build/lib/nav2_gazebo_spawner/nav2_gazebo_spawner.py -> /home/diego/Workspaces/dev_ws/install/nav2_gazebo_spawner/lib/python3.8/site-packages/nav2_gazebo_spawner
+[2.778s] byte-compiling /home/diego/Workspaces/dev_ws/install/nav2_gazebo_spawner/lib/python3.8/site-packages/nav2_gazebo_spawner/nav2_gazebo_spawner.py to nav2_gazebo_spawner.cpython-38.pyc
+[2.781s] running install_data
+[2.783s] creating /home/diego/Workspaces/dev_ws/install/nav2_gazebo_spawner/share/ament_index
+[2.784s] creating /home/diego/Workspaces/dev_ws/install/nav2_gazebo_spawner/share/ament_index/resource_index
+[2.784s] creating /home/diego/Workspaces/dev_ws/install/nav2_gazebo_spawner/share/ament_index/resource_index/packages
+[2.784s] error: can't copy 'resource/nav2_gazebo_spawner': doesn't exist or not a regular file
+[2.841s] Invoked command in '/home/diego/Workspaces/dev_ws/src/nav2_bringup/nav2_bringup/nav2_gazebo_spawner' returned '1': PYTHONPATH=/home/diego/Workspaces/dev_ws/install/nav2_gazebo_spawner/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../../build/nav2_gazebo_spawner build --build-base /home/diego/Workspaces/dev_ws/build/nav2_gazebo_spawner/build install --prefix /home/diego/Workspaces/dev_ws/install/nav2_gazebo_spawner --record /home/diego/Workspaces/dev_ws/build/nav2_gazebo_spawner/install.log --single-version-externally-managed

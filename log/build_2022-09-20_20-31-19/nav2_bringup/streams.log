@@ -1,0 +1,5 @@
+[0.083s] Invoking command in '/home/diego/Workspaces/dev_ws/build/nav2_bringup': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/diego/Workspaces/dev_ws/build/nav2_bringup -- -j2 -l2
+[0.141s] CMake Error: The source directory "/home/diego/Workspaces/dev_ws/src/nav2_bringup/nav2_bringup/bringup" does not exist.
+[0.142s] Specify --help for usage, or press the help button on the CMake GUI.
+[0.145s] make: *** [Makefile:222: cmake_check_build_system] Error 1
+[0.154s] Invoked command in '/home/diego/Workspaces/dev_ws/build/nav2_bringup' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/diego/Workspaces/dev_ws/build/nav2_bringup -- -j2 -l2
