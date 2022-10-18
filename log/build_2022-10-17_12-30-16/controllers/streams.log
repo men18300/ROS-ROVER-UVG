@@ -1,0 +1,21 @@
+[1.666s] Invoking command in '/home/diego/Workspaces/dev_ws/src/controllers': PYTHONPATH=/home/diego/Workspaces/dev_ws/install/controllers/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/controllers build --build-base /home/diego/Workspaces/dev_ws/build/controllers/build install --prefix /home/diego/Workspaces/dev_ws/install/controllers --record /home/diego/Workspaces/dev_ws/build/controllers/install.log --single-version-externally-managed
+[2.197s] running egg_info
+[2.198s] writing ../../build/controllers/controllers.egg-info/PKG-INFO
+[2.199s] writing dependency_links to ../../build/controllers/controllers.egg-info/dependency_links.txt
+[2.200s] writing entry points to ../../build/controllers/controllers.egg-info/entry_points.txt
+[2.201s] writing requirements to ../../build/controllers/controllers.egg-info/requires.txt
+[2.201s] writing top-level names to ../../build/controllers/controllers.egg-info/top_level.txt
+[2.281s] reading manifest file '../../build/controllers/controllers.egg-info/SOURCES.txt'
+[2.283s] writing manifest file '../../build/controllers/controllers.egg-info/SOURCES.txt'
+[2.283s] running build
+[2.284s] running build_py
+[2.284s] running install
+[2.286s] running install_lib
+[2.289s] running install_data
+[2.290s] running install_egg_info
+[2.294s] removing '/home/diego/Workspaces/dev_ws/install/controllers/lib/python3.8/site-packages/controllers-0.0.0-py3.8.egg-info' (and everything under it)
+[2.295s] Copying ../../build/controllers/controllers.egg-info to /home/diego/Workspaces/dev_ws/install/controllers/lib/python3.8/site-packages/controllers-0.0.0-py3.8.egg-info
+[2.298s] running install_scripts
+[2.337s] Installing simple_controller script to /home/diego/Workspaces/dev_ws/install/controllers/lib/controllers
+[2.339s] writing list of installed files to '/home/diego/Workspaces/dev_ws/build/controllers/install.log'
+[2.409s] Invoked command in '/home/diego/Workspaces/dev_ws/src/controllers' returned '0': PYTHONPATH=/home/diego/Workspaces/dev_ws/install/controllers/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/controllers build --build-base /home/diego/Workspaces/dev_ws/build/controllers/build install --prefix /home/diego/Workspaces/dev_ws/install/controllers --record /home/diego/Workspaces/dev_ws/build/controllers/install.log --single-version-externally-managed

@@ -29,13 +29,13 @@ def generate_launch_description():
 
     declare_use_robot_state_pub_cmd = DeclareLaunchArgument(
         name='use_robot_state_pub',
-        default_value='True',
+        default_value='true',
         description='Whether to start the robot state publisher')
 
 
     declare_use_sim_time_argument = DeclareLaunchArgument(
         'use_sim_time',
-        default_value='False',
+        default_value='false',
         description='Use simulation/Gazebo clock')
 
     start_robot_state_publisher_cmd = Node(
