@@ -146,7 +146,7 @@
   </link>
 
   <!-- ****************************** LIDAR *****************************    -->
-  <link name="lidar_link">    
+  <!--link name="laser">    
     <inertial>
       <pose>0.215 0 0.13 0 0 0</pose>
       <inertia>
@@ -190,14 +190,15 @@
       <pose>0.215 0 0.215 0 0 0</pose>
       <always_on>true</always_on>
       <visualize>true</visualize>
-      <update_rate>5</update_rate>
+      <update_rate>10</update_rate>
       <ray>
         <scan>
           <horizontal>
-            <samples>360</samples>
+            <samples>1080</samples>
             <resolution>1.00000</resolution>
             <min_angle>-2.2689</min_angle>
             <max_angle>2.2689</max_angle>
+            
           </horizontal>
         </scan>
         <range>
@@ -216,10 +217,10 @@
           <remapping>~/out:=scan</remapping>
         </ros>
         <output_type>sensor_msgs/LaserScan</output_type>
-        <frame_name>lidar_link</frame_name>
+        <frame_name>laser</frame_name>
       </plugin>
     </sensor>
-  </link>
+  </link-->
   
   <!-- *********************** DRIVE WHEELS ******************************  -->
   <link name="drivewhl_l_link">
@@ -354,7 +355,7 @@
   
   <joint name="lidar_joint" type="fixed">
     <parent>base_link</parent>
-    <child>lidar_link</child>
+    <child>laser</child>
     <pose>0 0 0 0 0 0</pose>
   </joint>
 
@@ -384,7 +385,7 @@
 
     <!-- When true, publish coordinate transform from odom to base_footprint -->
     <!-- I usually use the robot_localization package to publish this transform -->   
-    <publish_odom_tf>true</publish_odom_tf>
+    <publish_odom_tf>false</publish_odom_tf>
     
     <!-- When true, publish coordinate transform from base_link to the wheels -->
     <!-- The robot_state_publisher package is often used to publish this transform -->   

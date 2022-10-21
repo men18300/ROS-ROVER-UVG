@@ -15,6 +15,7 @@ def generate_launch_description():
     default_model_path = os.path.join(pkg_share, 'models/basic_mobile_bot_v2.urdf')
     robot_name_in_urdf = 'basic_mobile_bot'
     default_rviz_config_path = os.path.join(pkg_share, 'rviz/urdf_config.rviz')
+    robot_localization_file_path = os.path.join(pkg_share, 'config/ekf.yaml') 
     robot_slam_file_path = os.path.join(pkg_share, 'params/mapper_params_online_sync.yaml') 
     
     model = LaunchConfiguration('model')
@@ -50,17 +51,62 @@ def generate_launch_description():
         parameters=[robot_slam_file_path,
           {'use_sim_time': use_sim_time}],
         package='slam_toolbox',
-        node_executable='sync_slam_toolbox_node',
+        node_executable='async_slam_toolbox_node',
         name='slam_toolbox',
         output='screen')
 
+  # Start robot localization using an Extended Kalman filter
+    start_robot_localization_cmd = Node(
+        package='robot_localization',
+        executable='ekf_node',
+        name='ekf_filter_node',
+        output='screen',
+        parameters=[robot_localization_file_path, 
+        {'use_sim_time': use_sim_time}])
+
+    #### tf2 static transforms
+
+    ## tf2 - base_footprint to laser
+    node_tf2_fp2laser = Node(
+        name='tf2_ros_fp_laser',
+        package='tf2_ros',
+        executable='static_transform_publisher',
+        output='screen',
+        arguments=['0', '0', '0', '0.0', '0.0', '0.0', 'base_footprint', 'laser'],   
+        )
+
+
+    ## tf2 - base_footprint to map
+    node_tf2_fp2map = Node(
+        name='tf2_ros_fp_map',
+        package='tf2_ros',
+        executable='static_transform_publisher',
+        output='screen',
+        arguments=['0', '0', '0', '0.0', '0.0', '0.0', 'odom', 'base_footprint'], 
+        )
+
+
+    ## tf2 - base_footprint to odom
+    node_tf2_fp2odom = Node(
+        name='tf2_ros_fp_odom', 
+        package='tf2_ros',
+        executable='static_transform_publisher',
+        output='screen',
+        arguments=['0', '0', '0', '0.0', '0.0', '0.0', 'map', 'odom'],
+        )             
+        
     ld = LaunchDescription()
   # Declare the launch options
     ld.add_action(declare_model_path_cmd)
     ld.add_action(declare_use_robot_state_pub_cmd) 
     ld.add_action(declare_use_sim_time_argument)
     
+    #ld.add_action(start_robot_localization_cmd)
+    
     ld.add_action(start_robot_state_publisher_cmd)
     ld.add_action(start_sync_slam_toolbox_node)
+    #ld.add_action(node_tf2_fp2laser)
+    ld.add_action(node_tf2_fp2map)
+    #ld.add_action(node_tf2_fp2odom) 
 
     return ld
