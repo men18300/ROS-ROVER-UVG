@@ -146,7 +146,7 @@
   </link>
 
   <!-- ****************************** LIDAR *****************************    -->
-  <!--link name="laser">    
+  <link name="lidar_link">    
     <inertial>
       <pose>0.215 0 0.13 0 0 0</pose>
       <inertia>
@@ -217,10 +217,10 @@
           <remapping>~/out:=scan</remapping>
         </ros>
         <output_type>sensor_msgs/LaserScan</output_type>
-        <frame_name>laser</frame_name>
+        <frame_name>lidar_link</frame_name>
       </plugin>
     </sensor>
-  </link-->
+  </link>
   
   <!-- *********************** DRIVE WHEELS ******************************  -->
   <link name="drivewhl_l_link">
@@ -355,7 +355,7 @@
   
   <joint name="lidar_joint" type="fixed">
     <parent>base_link</parent>
-    <child>laser</child>
+    <child>lidar_link</child>
     <pose>0 0 0 0 0 0</pose>
   </joint>
 

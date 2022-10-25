@@ -17,10 +17,13 @@ def generate_launch_description():
     default_rviz_config_path = os.path.join(pkg_share, 'rviz/urdf_config.rviz')
     robot_localization_file_path = os.path.join(pkg_share, 'config/ekf.yaml') 
     robot_slam_file_path = os.path.join(pkg_share, 'params/mapper_params_online_sync.yaml') 
+    default_rviz_config_path = os.path.join(pkg_share, 'rviz/urdf_config.rviz')
     
     model = LaunchConfiguration('model')
+    rviz_config_file = LaunchConfiguration('rviz_config_file')
     use_sim_time = LaunchConfiguration('use_sim_time')
     use_robot_state_pub = LaunchConfiguration('use_robot_state_pub')   
+    use_rviz = LaunchConfiguration('use_rviz')
     
     # Declare the launch arguments  
     declare_model_path_cmd = DeclareLaunchArgument(
@@ -38,6 +41,16 @@ def generate_launch_description():
         'use_sim_time',
         default_value='false',
         description='Use simulation/Gazebo clock')
+        
+    declare_use_rviz_cmd = DeclareLaunchArgument(
+        name='use_rviz',
+        default_value='true',
+        description='Whether to start RVIZ')
+    
+    declare_rviz_config_file_cmd = DeclareLaunchArgument(
+        name='rviz_config_file',
+        default_value=default_rviz_config_path,
+        description='Full path to the RVIZ config file to use')
 
     start_robot_state_publisher_cmd = Node(
         condition=IfCondition(use_robot_state_pub),
@@ -51,7 +64,7 @@ def generate_launch_description():
         parameters=[robot_slam_file_path,
           {'use_sim_time': use_sim_time}],
         package='slam_toolbox',
-        node_executable='async_slam_toolbox_node',
+        node_executable='sync_slam_toolbox_node',
         name='slam_toolbox',
         output='screen')
 
@@ -66,16 +79,6 @@ def generate_launch_description():
 
     #### tf2 static transforms
 
-    ## tf2 - base_footprint to laser
-    node_tf2_fp2laser = Node(
-        name='tf2_ros_fp_laser',
-        package='tf2_ros',
-        executable='static_transform_publisher',
-        output='screen',
-        arguments=['0', '0', '0', '0.0', '0.0', '0.0', 'base_footprint', 'laser'],   
-        )
-
-
     ## tf2 - base_footprint to map
     node_tf2_fp2map = Node(
         name='tf2_ros_fp_map',
@@ -84,29 +87,31 @@ def generate_launch_description():
         output='screen',
         arguments=['0', '0', '0', '0.0', '0.0', '0.0', 'odom', 'base_footprint'], 
         )
-
-
-    ## tf2 - base_footprint to odom
-    node_tf2_fp2odom = Node(
-        name='tf2_ros_fp_odom', 
-        package='tf2_ros',
-        executable='static_transform_publisher',
+        
+   # Launch RViz
+    start_rviz_cmd = Node(
+        condition=IfCondition(use_rviz),
+        package='rviz2',
+        executable='rviz2',
+        name='rviz2',
         output='screen',
-        arguments=['0', '0', '0', '0.0', '0.0', '0.0', 'map', 'odom'],
-        )             
+        arguments=['-d', rviz_config_file])             
         
     ld = LaunchDescription()
   # Declare the launch options
     ld.add_action(declare_model_path_cmd)
+    ld.add_action(declare_rviz_config_file_cmd)
+    ld.add_action(declare_use_rviz_cmd) 
     ld.add_action(declare_use_robot_state_pub_cmd) 
     ld.add_action(declare_use_sim_time_argument)
     
-    #ld.add_action(start_robot_localization_cmd)
-    
+
     ld.add_action(start_robot_state_publisher_cmd)
+    #ld.add_action(start_robot_localization_cmd)
+    #ld.add_action(node_tf2_fp2map)   
     ld.add_action(start_sync_slam_toolbox_node)
-    #ld.add_action(node_tf2_fp2laser)
-    ld.add_action(node_tf2_fp2map)
-    #ld.add_action(node_tf2_fp2odom) 
+    ld.add_action(start_rviz_cmd)
+    
+
 
     return ld
