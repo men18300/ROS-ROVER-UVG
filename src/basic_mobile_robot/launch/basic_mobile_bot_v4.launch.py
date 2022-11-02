@@ -90,13 +90,13 @@ def generate_launch_description():
     condition=IfCondition(PythonExpression([use_simulator, ' and not ', headless])))
 
   # Start robot localization using an Extended Kalman filter
-  #start_robot_localization_cmd = Node(
-   # package='robot_localization',
-    #executable='ekf_node',
-    #name='ekf_filter_node',
-    #output='screen',
-    #parameters=[robot_localization_file_path, 
-    #{'use_sim_time': use_sim_time}])
+  start_robot_localization_cmd = Node(
+    package='robot_localization',
+    executable='ekf_node',
+    name='ekf_filter_node',
+    output='screen',
+    parameters=[robot_localization_file_path, 
+    {'use_sim_time': use_sim_time}])
 
   # Subscribe to the joint states of the robot, and publish the 3D pose of each link.
   start_robot_state_publisher_cmd = Node(

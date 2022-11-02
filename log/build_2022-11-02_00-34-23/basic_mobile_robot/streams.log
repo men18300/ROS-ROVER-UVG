@@ -1,0 +1,77 @@
+[0.103s] Invoking command in '/home/diego/Workspaces/dev_ws/build/basic_mobile_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/diego/Workspaces/dev_ws/install/controllers:/opt/ros/foxy /usr/bin/cmake --build /home/diego/Workspaces/dev_ws/build/basic_mobile_robot -- -j2 -l2
+[0.954s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.955s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.955s] -- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[1.076s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.092s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.095s] -- Added test 'lint_cmake' to check CMake code style
+[1.098s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[1.105s] -- Added test 'xmllint' to check XML markup files
+[1.109s] -- Configuring done
+[1.116s] -- Generating done
+[1.120s] -- Build files have been written to: /home/diego/Workspaces/dev_ws/build/basic_mobile_robot
+[1.179s] Invoked command in '/home/diego/Workspaces/dev_ws/build/basic_mobile_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/diego/Workspaces/dev_ws/install/controllers:/opt/ros/foxy /usr/bin/cmake --build /home/diego/Workspaces/dev_ws/build/basic_mobile_robot -- -j2 -l2
+[1.275s] Invoking command in '/home/diego/Workspaces/dev_ws/build/basic_mobile_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/diego/Workspaces/dev_ws/install/controllers:/opt/ros/foxy /usr/bin/cmake --install /home/diego/Workspaces/dev_ws/build/basic_mobile_robot
+[1.306s] -- Install configuration: ""
+[1.307s] -- Up-to-date: /home/diego/Workspaces/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/config
+[1.307s] -- Up-to-date: /home/diego/Workspaces/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/config/ekf.yaml
+[1.308s] -- Up-to-date: /home/diego/Workspaces/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/launch
+[1.309s] -- Up-to-date: /home/diego/Workspaces/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/launch/basic_mobile_bot_v5.launch.py
+[1.309s] -- Up-to-date: /home/diego/Workspaces/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/launch/basic_mobile_bot_rviz_visualize.launch.py
+[1.309s] -- Up-to-date: /home/diego/Workspaces/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/launch/basic_mobile_bot_v1.launch.py
+[1.310s] -- Up-to-date: /home/diego/Workspaces/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/launch/basic_mobile_bot_v4.launch.py
+[1.310s] -- Up-to-date: /home/diego/Workspaces/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/launch/basic_mobile_bot_slam.launch.py
+[1.311s] -- Up-to-date: /home/diego/Workspaces/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/launch/basic_mobile_bot_slam_real.launch.py
+[1.311s] -- Up-to-date: /home/diego/Workspaces/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/launch/basic_mobile_bot_v2.launch.py
+[1.312s] -- Up-to-date: /home/diego/Workspaces/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/launch/rover_uvg_slam.launch.py
+[1.312s] -- Up-to-date: /home/diego/Workspaces/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/launch/__pycache__
+[1.313s] -- Up-to-date: /home/diego/Workspaces/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/launch/__pycache__/basic_mobile_bot_v1.launch.cpython-38.pyc
+[1.313s] -- Up-to-date: /home/diego/Workspaces/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/launch/urg_launch.py
+[1.314s] -- Up-to-date: /home/diego/Workspaces/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/maps
+[1.315s] -- Up-to-date: /home/diego/Workspaces/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/maps/smalltown_world.yaml
+[1.315s] -- Up-to-date: /home/diego/Workspaces/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/maps/smalltown_world.pgm
+[1.315s] -- Up-to-date: /home/diego/Workspaces/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/meshes
+[1.316s] -- Up-to-date: /home/diego/Workspaces/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/meshes/arm_base.stl
+[1.317s] -- Up-to-date: /home/diego/Workspaces/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/meshes/wrist.stl
+[1.318s] -- Up-to-date: /home/diego/Workspaces/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/meshes/Orugas.stl
+[1.319s] -- Up-to-date: /home/diego/Workspaces/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/meshes/bicep.stl
+[1.320s] -- Up-to-date: /home/diego/Workspaces/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/meshes/elbow.stl
+[1.321s] -- Up-to-date: /home/diego/Workspaces/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/meshes/robot_base.stl
+[1.322s] -- Up-to-date: /home/diego/Workspaces/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/meshes/wheel.stl
+[1.323s] -- Up-to-date: /home/diego/Workspaces/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/meshes/Chasis.stl
+[1.323s] -- Up-to-date: /home/diego/Workspaces/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/models
+[1.323s] -- Up-to-date: /home/diego/Workspaces/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/models/basic_mobile_bot_description
+[1.324s] -- Up-to-date: /home/diego/Workspaces/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/models/basic_mobile_bot_description/meshes
+[1.328s] -- Up-to-date: /home/diego/Workspaces/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/models/basic_mobile_bot_description/meshes/arm_base.stl
+[1.328s] -- Up-to-date: /home/diego/Workspaces/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/models/basic_mobile_bot_description/meshes/wrist.stl
+[1.329s] -- Up-to-date: /home/diego/Workspaces/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/models/basic_mobile_bot_description/meshes/bicep.stl
+[1.329s] -- Up-to-date: /home/diego/Workspaces/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/models/basic_mobile_bot_description/meshes/elbow.stl
+[1.329s] -- Up-to-date: /home/diego/Workspaces/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/models/basic_mobile_bot_description/meshes/robot_base.stl
+[1.330s] -- Up-to-date: /home/diego/Workspaces/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/models/basic_mobile_bot_description/meshes/wheel.stl
+[1.330s] -- Up-to-date: /home/diego/Workspaces/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/models/basic_mobile_bot_description/meshes/Chasis.stl
+[1.330s] -- Up-to-date: /home/diego/Workspaces/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/models/basic_mobile_bot_description/model.config
+[1.331s] -- Up-to-date: /home/diego/Workspaces/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/models/basic_mobile_bot_description/model.sdf
+[1.331s] -- Up-to-date: /home/diego/Workspaces/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/models/basic_mobile_bot_v1.urdf
+[1.331s] -- Up-to-date: /home/diego/Workspaces/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/models/basic_mobile_bot_v2.urdf
+[1.332s] -- Up-to-date: /home/diego/Workspaces/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/params
+[1.332s] -- Up-to-date: /home/diego/Workspaces/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/params/urg.yaml
+[1.332s] -- Up-to-date: /home/diego/Workspaces/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/params/mapper_params_online_sync.yaml
+[1.333s] -- Up-to-date: /home/diego/Workspaces/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/params/nav2_params.yaml
+[1.333s] -- Up-to-date: /home/diego/Workspaces/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/rviz
+[1.333s] -- Up-to-date: /home/diego/Workspaces/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/rviz/urdf_config.rviz
+[1.334s] -- Up-to-date: /home/diego/Workspaces/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/rviz/nav2_config.rviz
+[1.334s] -- Up-to-date: /home/diego/Workspaces/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/scripts
+[1.344s] -- Up-to-date: /home/diego/Workspaces/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/scripts/hardware_arduino_wheels.py
+[1.345s] -- Up-to-date: /home/diego/Workspaces/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/scripts/optitrack_client.py
+[1.345s] -- Up-to-date: /home/diego/Workspaces/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/scripts/node_dwm1001.py
+[1.346s] -- Up-to-date: /home/diego/Workspaces/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/src
+[1.346s] -- Up-to-date: /home/diego/Workspaces/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/worlds
+[1.346s] -- Up-to-date: /home/diego/Workspaces/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/worlds/basic_mobile_bot_world
+[1.346s] -- Up-to-date: /home/diego/Workspaces/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/worlds/basic_mobile_bot_world/smalltown.world
+[1.346s] CMake Error at cmake_install.cmake:41 (file):
+[1.347s]   file INSTALL cannot find
+[1.347s]   "/home/diego/Workspaces/dev_ws/src/basic_mobile_robot/scripts/hardware_arduino_wheels":
+[1.347s]   No such file or directory.
+[1.347s] 
+[1.347s] 
+[1.348s] Invoked command in '/home/diego/Workspaces/dev_ws/build/basic_mobile_robot' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/diego/Workspaces/dev_ws/install/controllers:/opt/ros/foxy /usr/bin/cmake --install /home/diego/Workspaces/dev_ws/build/basic_mobile_robot

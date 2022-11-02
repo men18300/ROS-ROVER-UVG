@@ -1,0 +1,24 @@
+[0.088s] Invoking command in '/home/diego/Workspaces/dev_ws/build/basic_mobile_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/diego/Workspaces/dev_ws/install/controllers:/opt/ros/foxy /usr/bin/cmake --build /home/diego/Workspaces/dev_ws/build/basic_mobile_robot -- -j2 -l2
+[0.166s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.227s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.855s] CMake Error at CMakeLists.txt:21 (find_package):
+[0.855s]   By not providing "Findrlcpp.cmake" in CMAKE_MODULE_PATH this project has
+[0.855s]   asked CMake to find a package configuration file provided by "rlcpp", but
+[0.856s]   CMake did not find one.
+[0.856s] 
+[0.856s]   Could not find a package configuration file provided by "rlcpp" with any of
+[0.856s]   the following names:
+[0.857s] 
+[0.857s]     rlcppConfig.cmake
+[0.857s]     rlcpp-config.cmake
+[0.857s] 
+[0.858s]   Add the installation prefix of "rlcpp" to CMAKE_PREFIX_PATH or set
+[0.858s]   "rlcpp_DIR" to a directory containing one of the above files.  If "rlcpp"
+[0.858s]   provides a separate development package or SDK, be sure it has been
+[0.859s]   installed.
+[0.859s] 
+[0.859s] 
+[0.861s] -- Configuring incomplete, errors occurred!
+[0.861s] See also "/home/diego/Workspaces/dev_ws/build/basic_mobile_robot/CMakeFiles/CMakeOutput.log".
+[0.867s] make: *** [Makefile:222: cmake_check_build_system] Error 1
+[0.916s] Invoked command in '/home/diego/Workspaces/dev_ws/build/basic_mobile_robot' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/diego/Workspaces/dev_ws/install/controllers:/opt/ros/foxy /usr/bin/cmake --build /home/diego/Workspaces/dev_ws/build/basic_mobile_robot -- -j2 -l2

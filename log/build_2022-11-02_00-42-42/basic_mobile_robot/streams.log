@@ -1,0 +1,16 @@
+[0.081s] Invoking command in '/home/diego/Workspaces/dev_ws/build/basic_mobile_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/diego/Workspaces/dev_ws/install/controllers:/opt/ros/foxy /usr/bin/cmake --build /home/diego/Workspaces/dev_ws/build/basic_mobile_robot -- -j2 -l2
+[0.170s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.239s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.957s] CMake Error at /opt/ros/foxy/share/ament_cmake_python/cmake/ament_python_install_package.cmake:46 (message):
+[0.958s]   ament_python_install_package() the Python package folder
+[0.958s]   '/home/diego/Workspaces/dev_ws/src/basic_mobile_robot/basic_mobile_robot'
+[0.959s]   doesn't contain an '__init__.py' file
+[0.959s] Call Stack (most recent call first):
+[0.959s]   /opt/ros/foxy/share/ament_cmake_python/cmake/ament_python_install_package.cmake:28 (_ament_cmake_python_install_package)
+[0.960s]   CMakeLists.txt:32 (ament_python_install_package)
+[0.961s] 
+[0.961s] 
+[0.961s] -- Configuring incomplete, errors occurred!
+[0.962s] See also "/home/diego/Workspaces/dev_ws/build/basic_mobile_robot/CMakeFiles/CMakeOutput.log".
+[0.970s] make: *** [Makefile:222: cmake_check_build_system] Error 1
+[0.978s] Invoked command in '/home/diego/Workspaces/dev_ws/build/basic_mobile_robot' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/diego/Workspaces/dev_ws/install/controllers:/opt/ros/foxy /usr/bin/cmake --build /home/diego/Workspaces/dev_ws/build/basic_mobile_robot -- -j2 -l2

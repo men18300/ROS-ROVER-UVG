@@ -1,0 +1,4 @@
+CMake Error: Cannot determine link language for target "hardware_arduino_odometry".
+CMake Error: CMake can not determine linker language for target: hardware_arduino_odometry
+CMake Generate step failed.  Build files cannot be regenerated correctly.
+make: *** [Makefile:236: cmake_check_build_system] Error 1

@@ -1,0 +1,17 @@
+[0.107s] Invoking command in '/home/diego/Workspaces/dev_ws/build/basic_mobile_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/diego/Workspaces/dev_ws/install/controllers:/opt/ros/foxy /usr/bin/cmake --build /home/diego/Workspaces/dev_ws/build/basic_mobile_robot -- -j2 -l2
+[0.194s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.272s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.910s] CMake Error at CMakeLists.txt:26 (install):
+[0.911s]   install does not recognize sub-command scripts/hardware_arduino_wheels
+[0.912s] 
+[0.912s] 
+[0.912s] -- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[1.130s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.144s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.149s] -- Added test 'lint_cmake' to check CMake code style
+[1.151s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[1.157s] -- Added test 'xmllint' to check XML markup files
+[1.165s] -- Configuring incomplete, errors occurred!
+[1.165s] See also "/home/diego/Workspaces/dev_ws/build/basic_mobile_robot/CMakeFiles/CMakeOutput.log".
+[1.171s] make: *** [Makefile:236: cmake_check_build_system] Error 1
+[1.177s] Invoked command in '/home/diego/Workspaces/dev_ws/build/basic_mobile_robot' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/diego/Workspaces/dev_ws/install/controllers:/opt/ros/foxy /usr/bin/cmake --build /home/diego/Workspaces/dev_ws/build/basic_mobile_robot -- -j2 -l2

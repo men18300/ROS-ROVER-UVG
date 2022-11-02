@@ -39,6 +39,7 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/basic_mobile_robot" TYPE DIRECTORY FILES
+    "/home/diego/Workspaces/dev_ws/src/basic_mobile_robot/basic_mobile_robot"
     "/home/diego/Workspaces/dev_ws/src/basic_mobile_robot/config"
     "/home/diego/Workspaces/dev_ws/src/basic_mobile_robot/launch"
     "/home/diego/Workspaces/dev_ws/src/basic_mobile_robot/maps"
@@ -46,8 +47,36 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     "/home/diego/Workspaces/dev_ws/src/basic_mobile_robot/models"
     "/home/diego/Workspaces/dev_ws/src/basic_mobile_robot/params"
     "/home/diego/Workspaces/dev_ws/src/basic_mobile_robot/rviz"
+    "/home/diego/Workspaces/dev_ws/src/basic_mobile_robot/scripts"
     "/home/diego/Workspaces/dev_ws/src/basic_mobile_robot/src"
     "/home/diego/Workspaces/dev_ws/src/basic_mobile_robot/worlds"
+    )
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/basic_mobile_robot/environment" TYPE FILE FILES "/home/diego/Workspaces/dev_ws/build/basic_mobile_robot/ament_cmake_environment_hooks/pythonpath.sh")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/basic_mobile_robot/environment" TYPE FILE FILES "/home/diego/Workspaces/dev_ws/build/basic_mobile_robot/ament_cmake_environment_hooks/pythonpath.dsv")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3.8/site-packages/basic_mobile_robot" TYPE DIRECTORY FILES "/home/diego/Workspaces/dev_ws/src/basic_mobile_robot/basic_mobile_robot/" REGEX "/[^/]*\\.pyc$" EXCLUDE REGEX "/\\_\\_pycache\\_\\_$" EXCLUDE)
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  execute_process(
+        COMMAND
+        "/usr/bin/python3" "-m" "compileall"
+        "/home/diego/Workspaces/dev_ws/install/basic_mobile_robot/lib/python3.8/site-packages/basic_mobile_robot"
+      )
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/basic_mobile_robot" TYPE PROGRAM FILES
+    "/home/diego/Workspaces/dev_ws/src/basic_mobile_robot/scripts/hardware_arduino_wheels.py"
+    "/home/diego/Workspaces/dev_ws/src/basic_mobile_robot/scripts/optitrack_client.py"
     )
 endif()
 

@@ -1,0 +1,14 @@
+-- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+CMake Error at /opt/ros/foxy/share/ament_cmake_python/cmake/ament_python_install_package.cmake:46 (message):
+  ament_python_install_package() the Python package folder
+  '/home/diego/Workspaces/dev_ws/src/basic_mobile_robot/basic_mobile_robot'
+  doesn't contain an '__init__.py' file
+Call Stack (most recent call first):
+  /opt/ros/foxy/share/ament_cmake_python/cmake/ament_python_install_package.cmake:28 (_ament_cmake_python_install_package)
+  CMakeLists.txt:32 (ament_python_install_package)
+
+
+-- Configuring incomplete, errors occurred!
+See also "/home/diego/Workspaces/dev_ws/build/basic_mobile_robot/CMakeFiles/CMakeOutput.log".
+make: *** [Makefile:222: cmake_check_build_system] Error 1

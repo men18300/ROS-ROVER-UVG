@@ -337,6 +337,9 @@ basic_mobile_robot_BINARY_DIR:STATIC=/home/diego/Workspaces/dev_ws/build/basic_m
 //Value Computed by CMake
 basic_mobile_robot_SOURCE_DIR:STATIC=/home/diego/Workspaces/dev_ws/src/basic_mobile_robot
 
+//The directory containing a CMake configuration file for rlcpp.
+rlcpp_DIR:PATH=rlcpp_DIR-NOTFOUND
+
 //Path to a program.
 xmllint_BIN:FILEPATH=/usr/bin/xmllint
 
@@ -492,4 +495,7 @@ CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 FIND_PACKAGE_MESSAGE_DETAILS_PythonInterp:INTERNAL=[/usr/bin/python3][v3.8.10(3)]
 //ADVANCED property for variable: PYTHON_EXECUTABLE
 PYTHON_EXECUTABLE-ADVANCED:INTERNAL=1
+//The directory for Python library installation. This needs to
+// be in PYTHONPATH when 'setup.py install' is called.
+PYTHON_INSTALL_DIR:INTERNAL=lib/python3.8/site-packages
 

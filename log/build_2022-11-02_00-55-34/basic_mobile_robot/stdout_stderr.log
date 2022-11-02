@@ -1,0 +1,22 @@
+-- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+CMake Error at CMakeLists.txt:21 (find_package):
+  By not providing "Findrlcpp.cmake" in CMAKE_MODULE_PATH this project has
+  asked CMake to find a package configuration file provided by "rlcpp", but
+  CMake did not find one.
+
+  Could not find a package configuration file provided by "rlcpp" with any of
+  the following names:
+
+    rlcppConfig.cmake
+    rlcpp-config.cmake
+
+  Add the installation prefix of "rlcpp" to CMAKE_PREFIX_PATH or set
+  "rlcpp_DIR" to a directory containing one of the above files.  If "rlcpp"
+  provides a separate development package or SDK, be sure it has been
+  installed.
+
+
+-- Configuring incomplete, errors occurred!
+See also "/home/diego/Workspaces/dev_ws/build/basic_mobile_robot/CMakeFiles/CMakeOutput.log".
+make: *** [Makefile:222: cmake_check_build_system] Error 1

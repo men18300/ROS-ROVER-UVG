@@ -1,3 +1,4 @@
+/home/diego/Workspaces/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/basic_mobile_robot/__init__.py
 /home/diego/Workspaces/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/config/ekf.yaml
 /home/diego/Workspaces/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/launch/basic_mobile_bot_v5.launch.py
 /home/diego/Workspaces/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/launch/basic_mobile_bot_rviz_visualize.launch.py
@@ -6,6 +7,7 @@
 /home/diego/Workspaces/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/launch/basic_mobile_bot_slam.launch.py
 /home/diego/Workspaces/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/launch/basic_mobile_bot_slam_real.launch.py
 /home/diego/Workspaces/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/launch/basic_mobile_bot_v2.launch.py
+/home/diego/Workspaces/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/launch/rover_uvg_slam.launch.py
 /home/diego/Workspaces/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/launch/__pycache__/basic_mobile_bot_v1.launch.cpython-38.pyc
 /home/diego/Workspaces/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/launch/urg_launch.py
 /home/diego/Workspaces/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/maps/smalltown_world.yaml
@@ -34,7 +36,15 @@
 /home/diego/Workspaces/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/params/nav2_params.yaml
 /home/diego/Workspaces/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/rviz/urdf_config.rviz
 /home/diego/Workspaces/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/rviz/nav2_config.rviz
+/home/diego/Workspaces/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/scripts/hardware_arduino_wheels.py
+/home/diego/Workspaces/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/scripts/optitrack_client.py
+/home/diego/Workspaces/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/scripts/node_dwm1001.py
 /home/diego/Workspaces/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/worlds/basic_mobile_bot_world/smalltown.world
+/home/diego/Workspaces/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/environment/pythonpath.sh
+/home/diego/Workspaces/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/environment/pythonpath.dsv
+/home/diego/Workspaces/dev_ws/install/basic_mobile_robot/lib/python3.8/site-packages/basic_mobile_robot/__init__.py
+/home/diego/Workspaces/dev_ws/install/basic_mobile_robot/lib/basic_mobile_robot/hardware_arduino_wheels.py
+/home/diego/Workspaces/dev_ws/install/basic_mobile_robot/lib/basic_mobile_robot/optitrack_client.py
 /home/diego/Workspaces/dev_ws/install/basic_mobile_robot/share/ament_index/resource_index/package_run_dependencies/basic_mobile_robot
 /home/diego/Workspaces/dev_ws/install/basic_mobile_robot/share/ament_index/resource_index/parent_prefix_path/basic_mobile_robot
 /home/diego/Workspaces/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/environment/ament_prefix_path.sh

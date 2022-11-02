@@ -8,7 +8,12 @@
   <license>TODO: License declaration</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
+  <buildtool_depend>ament_cmake_python</buildtool_depend> 
 
+
+  <exec_depend>rlcpp</exec_depend>
+  <exec_depend>rlcpy</exec_depend>
+  <exec_depend>joint_state_publisher</exec_depend>
   <exec_depend>joint_state_publisher</exec_depend>
   <exec_depend>robot_localization</exec_depend>
   <exec_depend>robot_state_publisher</exec_depend>

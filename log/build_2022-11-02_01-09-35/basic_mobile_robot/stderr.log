@@ -1,0 +1,5 @@
+CMake Error at CMakeLists.txt:35 (install):
+  install does not recognize sub-command PROGRAM
+
+
+make: *** [Makefile:222: cmake_check_build_system] Error 1
