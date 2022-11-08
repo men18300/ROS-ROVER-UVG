@@ -110,8 +110,8 @@ class ArduinoCommunication(Node):
            #print(lineal)
            #print(lineal_prev)
            
-           print(lineal)
-           print(angular)    
+           #print(lineal)
+           #print(angular)    
            
            ##################################
            ###COMENTAR PARA PRUEBAS CON PROTO
@@ -119,6 +119,9 @@ class ArduinoCommunication(Node):
            left_wheel_vel=(lineal-(angular*l))/r
            #LLanta derecha
            right_wheel_vel=(lineal+(angular*l))/r
+           
+           print("LEFT WHEEL:", left_wheel_vel)
+           print("RIGHT WHEEL:", right_wheel_vel)
            ##################################
            
            data = {}
