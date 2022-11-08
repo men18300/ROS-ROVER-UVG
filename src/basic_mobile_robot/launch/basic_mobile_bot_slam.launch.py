@@ -88,6 +88,15 @@ def generate_launch_description():
         arguments=['0', '0', '0', '0.0', '0.0', '0.0', 'odom', 'base_footprint'], 
         )
         
+    ## tf2 - base_footprint to map
+    node_tf2_map2odom = Node(
+        name='tf2_ros_fp_map',
+        package='tf2_ros',
+        executable='static_transform_publisher',
+        output='screen',
+        arguments=['0.015', '0.015', '0.015', '0.0', '0.0', '0.0', 'odom', 'map'], 
+        )
+        
    # Launch RViz
     start_rviz_cmd = Node(
         condition=IfCondition(use_rviz),
@@ -106,9 +115,12 @@ def generate_launch_description():
     ld.add_action(declare_use_sim_time_argument)
     
 
-    ld.add_action(start_robot_state_publisher_cmd)
-    #ld.add_action(start_robot_localization_cmd)
+    
+    ld.add_action(start_robot_localization_cmd)
+    ld.add_action(node_tf2_map2odom)  
     #ld.add_action(node_tf2_fp2map)   
+    
+    ld.add_action(start_robot_state_publisher_cmd)
     ld.add_action(start_sync_slam_toolbox_node)
     ld.add_action(start_rviz_cmd)
     
