@@ -15,6 +15,6 @@ def generate_launch_description():
    executable = 'urg_node_driver',
   # output = 'screen',
    parameters = [param_file],
-   remappings=[('scan','base_scan'),]
+   remappings=[('scan','scan'),]
    )
    ])

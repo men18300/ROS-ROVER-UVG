@@ -9,6 +9,7 @@ import sys
 import rclpy
 from rclpy.node import Node
 from nav_msgs.msg import Odometry
+from tf_transformations import quaternion_from_euler
 from geometry_msgs.msg import Point, Pose, Quaternion, Twist, Vector3
 
 
@@ -81,7 +82,8 @@ class ArduinoCommunication(Node):
            # set the position 
            odom.pose.pose.position.x = incomingDic["x"]
            odom.pose.pose.position.y = incomingDic["y"]
-           odom.pose.pose.position.z = incomingDic["z"]
+           odom.pose.pose.position.z = 0.0
+           quat=quaternion_from_euler(0,0,incomingDic["z"])
            odom.pose.pose.orientation.x = 0.0
            odom.pose.pose.orientation.y = 0.0
            odom.pose.pose.orientation.z = 0.0
@@ -119,6 +121,21 @@ class ArduinoCommunication(Node):
            left_wheel_vel=(lineal-(angular*l))/r
            #LLanta derecha
            right_wheel_vel=(lineal+(angular*l))/r
+           
+           left_wheel_vel=left_wheel_vel*10.0
+           right_wheel_vel=right_wheel_vel*10.0
+           
+           #if left_wheel_vel < 150.0 and left_wheel_vel>50.0:
+           #   left_wheel_vel=150.0
+           #else if left_wheel_vel>-150.0 and left_wheel_vel<-50.0:
+           #   left_wheel_vel=150.0  
+                
+           #if right_wheel_vel < 150.0 and right_wheel_vel>50.0:
+           #   right_wheel_vel=150.0
+           #else if right_wheel_vel>-150.0 and right_wheel_vel<-50.0:
+           #   right_wheel_vel=150.0      
+           
+           
            
            print("LEFT WHEEL:", left_wheel_vel)
            print("RIGHT WHEEL:", right_wheel_vel)

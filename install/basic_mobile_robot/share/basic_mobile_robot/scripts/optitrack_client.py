@@ -53,8 +53,10 @@ class OptiTrackNode(Node):
         odom.pose.pose.position.z = self.M1_Pos[1]
         odom.pose.pose.orientation.x = self.M1_Ori[0]
         odom.pose.pose.orientation.y = self.M1_Ori[2]
-        odom.pose.pose.orientation.z = self.M1_Ori[1]
+        odom.pose.pose.orientation.z = -self.M1_Ori[1]
         odom.pose.pose.orientation.w = self.M1_Ori[3]
+        
+        #COn el optritrack funciono ponerle negativo a z
 
         #Publish de Odometry in the topic
         self.publisher_.publish(odom)

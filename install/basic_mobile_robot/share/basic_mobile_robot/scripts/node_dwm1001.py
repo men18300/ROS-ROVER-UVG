@@ -98,57 +98,6 @@ def get_Z(s):
 	return Z_mm#, Z_cm, Z_m
 
 
-
-### MODULO CONFIG SET ###
-def dwm_cfg_set(): #(pag.48)
-	d_send= [0x07, 0x02, 0x9e, 0x00] #dwm_cfg_set 
-	dwm_ser.write(serial.to_bytes(d_send))
-	s = dwm_ser.read(3)
-	return s
-		
-### MODULO CONFIG GET ###
-def dwm_cfg_get(): #(pag.48)
-	d_send= [0x08, 0x00] #dwm_cfg_get 
-	dwm_ser.write(serial.to_bytes(d_send))
-	s = dwm_ser.read(7)
-	return s
-	
-### MODULO BAUDRATE GET ###r
-def dwm_baddr_get(): #(pag.56)
-	d_send= [0x10, 0x00] #dwm_baddr_get 
-	dwm_ser.write(serial.to_bytes(d_send))
-	s = dwm_ser.read(11)
-	return s
-	
-### MODULO STATUS GET ###
-def dwm_status_get(): #(pag.76)
-	d_send= [0x32, 0x00] #dwm_status_get 
-	dwm_ser.write(serial.to_bytes(d_send))
-	s = dwm_ser.read(7)
-	return s
-
-
-### SET GPIO 13 HIGH ### (EJEMPLO PARA COMPROBARR)
-def set_13_high(): #(pag.25)
-	d_send= [0x28, 0x02,0x0D,0x01]  #se espera 40 01 00 
-	dwm_ser.write(serial.to_bytes(d_send))
-	s = dwm_ser.read(3)
-	return s
-
-### MODULO POSITION UPDATE RATE ### (que tan rapido actualiza la posicion, que tan rapido vuelve a leer datos)
-def dwm_upd_rate_get(): #(pag.43)
-	d_send= [0x32, 0x00] #dwm_upd_rate_get 
-	dwm_ser.write(serial.to_bytes(d_send))
-	s = dwm_ser.read(9)
-	return s
-
-### MODULO PANID GET ###
-def dwm_panid_get(): #(pag.74)
-	d_send= [0x2F, 0x00] #dwm_panid_get 
-	dwm_ser.write(serial.to_bytes(d_send))
-	s = dwm_ser.read(7)
-	return s
-
 ## PARTE DE ROS %%
 class DWM1001Node(Node):
 

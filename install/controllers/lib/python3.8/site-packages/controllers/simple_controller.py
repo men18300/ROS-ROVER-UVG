@@ -12,6 +12,8 @@ from nav_msgs.msg import Odometry
 from tf_transformations import euler_from_quaternion
 from geometry_msgs.msg import Point, Pose, Quaternion, Twist, Vector3
 from math import atan2
+l=0.67
+r=0.32
 
 x=0.0
 y=0.0
@@ -19,14 +21,14 @@ theta=0.0
 
 #Para los calculos
 #PID posición
-kpO = 5
+kpO = 25.0
 kiO = 0.01 
 kdO = 0
 EO = 0
 eO_1 = 0
 
-v0 = 0.8
-alpha = 0.2
+v0 = 2.5
+alpha = 0.9
 
 class ControladorVelocidad(Node):
 
@@ -48,17 +50,10 @@ class ControladorVelocidad(Node):
         goal=Point()
         goal.x=8.0
         goal.y=-7.0
-       
-        #goal.x=-5.3
-        #goal.y=-12.0
-
-
-        #goal.x=8.0
-        #goal.y=-3.0
         
-        #goal.x=8.0
-        #goal.y=-2.0
-
+        #Pruebas con real
+        goal.x=-0.1
+        goal.y=-0.1
 
     def publish_message(self):   
         global goal
@@ -106,17 +101,32 @@ class ControladorVelocidad(Node):
         kP = v0 * (1-math.exp(-alpha*eP*eP)) / eP;
         v = kP*eP;
         
+        #Pruebas con real
+        #v=0.0;
+        
         # Control de velocidad angular
         eO_D = eO - eO_1;
         EO = EO + eO;
         w = kpO*eO + kiO*EO + kdO*eO_D;
+        w=-w;
+        #w=0.0;
         eO_1 = eO;
 
-	
+        ####################################
+        ##SOLO PARA VER QUE ESTA ENVIANDO
+        left_wheel_vel=(v+(w*l))/r
+        #LLanta derecha
+        right_wheel_vel=(v-(w*l))/r
+        
+        print("v:", v)
+        #print("LLANTA IZQUIERDA:",left_wheel_vel)
+        #print("LLANTA DERECHA:", right_wheel_vel)
+        ####################################    
+        
         speed.linear.x=v
         speed.angular.z=w
-        print(v)
-        print(w)
+        #print(v)
+        #print(w)
         self.publisher_.publish(speed)
         
         
@@ -132,6 +142,10 @@ class ControladorVelocidad(Node):
         rot_q=msg.pose.pose.orientation
         (roll,pitch,theta)=euler_from_quaternion([rot_q.x, rot_q.y, rot_q.z, rot_q.w])
         
+        #Pruebas con ODOMETRIA DE JORGE
+        #theta=msg.pose.pose.position.z
+        #print("x:" , x)
+        #print("y:" , y)
     
 
 def main(args=None):
