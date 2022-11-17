@@ -18,7 +18,7 @@ Para validar la correcta integración de los módulos externos se realizaron sim
 En el presente repositorio se encuentras las siguientes carpetas:
 
 - Documentos, en donde se encuentran el trabajo de graduación y protocolo que se realizó como propósito de este proyecto. 
-- Código, se encuentra el código tanto para la simulación del proyecto como para la implementación física.
+- src, en donde se encuentra el código tanto para la simulación del proyecto como para la implementación física. En la carpeta `launch` dentro del paquete llamado basic_mobile_robot, se encuentra el README que explica cada archivo launch, cómo utilizarlo y la función de cada uno. De igual forma dentro de la carpeta `scripts` se encuentran los códigos realizados para la comunicación con algunos de los módulos del Rover UVG y una pequeña descripción de cómo crear nodos propios para nuestros proyectos.
 
 ## Instalación de ROS 2 en una máquina virtual
 
