@@ -12,9 +12,9 @@ Y luego corremos la siguiente instrucción con el nombre específico de cada arc
 ```
 Es importante mencionar que siempre se debe colocar el nombre del archivo launch en conjunto con la extensión `launch.py`. A continuación se describe cada archivo:
 
-- `sim_rover_uvg_slam.py` : Este archivo launch se encarga de realizar SLAM con el modelo SDF del ROVER UVG en la simualción en Gazebo. El mapa lo irá actualizando con respecto a los objetos que esten agregados al mundo en Gazebo, lo único que tendremos que realizar es mover al robot por nuestra cuenta. Esto se puede realizar por medio de el plugin `rqt_robot_steering` en donde podemos enviar comandos de velocidad al robot.
+- `sim_rover_uvg_slam.launch.py` : Este archivo launch se encarga de realizar SLAM con el modelo SDF del ROVER UVG en la simualción en Gazebo. El mapa lo irá actualizando con respecto a los objetos que esten agregados al mundo en Gazebo, lo único que tendremos que realizar es mover al robot por nuestra cuenta. Esto se puede realizar por medio de el plugin `rqt_robot_steering` en donde podemos enviar comandos de velocidad al robot.
 
-- `sim_rover_uvg_control_pap.py` : Este archivo launch se encarga de abrir un mundo en Gazebo y colocar al model SDF dentro de el. Podemos manejar al robot de igual forma con el plugin `rqt_robot_steering`, o bien se puede realizar control punto a punto por medio del controlador PID realizado. Esto se puede realizar corriendo el nodo del controlador con el comando:
+- `sim_rover_uvg_control_pap.launch.py` : Este archivo launch se encarga de abrir un mundo en Gazebo y colocar al model SDF dentro de el. Podemos manejar al robot de igual forma con el plugin `rqt_robot_steering`, o bien se puede realizar control punto a punto por medio del controlador PID realizado. Esto se puede realizar corriendo el nodo del controlador con el comando:
 
   ```console
   ~$ ros2 run basic_mobile_robot simple_controller.py
@@ -24,7 +24,7 @@ Es importante mencionar que siempre se debe colocar el nombre del archivo launch
 
 - `rover_uvg_urdf.launch.py` : Este archivo launch se utiliza únicamente para visualizar el URDF del ROVER UVG. Por si se desearan hacer cambios dentro del archivo, se   pueden observar dichos cambios una vez se corra este programa.
 - `rover_uvg_slam_raspi.launch.py` : Este programa es que se debe de correr dentro de la Raspberry Pi 4, de manera que empiece a correr el programa del LIDAR y a su   vez corra el programa que controla los motores por medio de la información que se le indique. Este programa se corre en conjunto con el programa `rover_uvg_slam.launch.py` ya que este segundo programa es el encargado de ir actualizando el map con respecto a la información del LIDAR y la odometría.
-- `rover_uvg_slam.py` : Como se mencionó previamente, este programa recibe información del LIDAR y de odometría para ir generando un nuevo mapa del entorno.
+- `rover_uvg_slam.launch.py` : Como se mencionó previamente, este programa recibe información del LIDAR y de odometría para ir generando un nuevo mapa del entorno.
 - `rover_uvg_control_pap.launch.py` : Este programa recibe información de odometría para realizar control punto a punto, de igual forma que en la simulación, se debe de correr el controlador con el comando: 
 
   ```console
