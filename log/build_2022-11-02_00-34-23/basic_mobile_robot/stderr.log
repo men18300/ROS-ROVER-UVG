@@ -1,6 +1,0 @@
-CMake Error at cmake_install.cmake:41 (file):
-  file INSTALL cannot find
-  "/home/diego/Workspaces/dev_ws/src/basic_mobile_robot/scripts/hardware_arduino_wheels":
-  No such file or directory.
-
-

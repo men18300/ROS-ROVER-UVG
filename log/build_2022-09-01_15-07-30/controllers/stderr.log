@@ -1,5 +1,0 @@
-  File "/home/diego/Workspaces/dev_ws/install/controllers/lib/python3.8/site-packages/controllers/simple_controller.py", line 52
-    goal.x=-4.8.0
-               ^
-SyntaxError: invalid syntax
-

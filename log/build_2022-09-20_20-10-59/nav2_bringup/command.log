@@ -1,2 +1,0 @@
-Invoking command in '/home/diego/Workspaces/dev_ws/build/nav2_bringup': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/diego/Workspaces/dev_ws/build/nav2_bringup -- -j2 -l2
-Invoked command in '/home/diego/Workspaces/dev_ws/build/nav2_bringup' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/diego/Workspaces/dev_ws/build/nav2_bringup -- -j2 -l2
