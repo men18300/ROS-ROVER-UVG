@@ -18,9 +18,9 @@ def generate_launch_description():
   pkg_gazebo_ros = FindPackageShare(package='gazebo_ros').find('gazebo_ros')   
   pkg_share = FindPackageShare(package='basic_mobile_robot').find('basic_mobile_robot')
   default_launch_dir = os.path.join(pkg_share, 'launch')
-  default_model_path = os.path.join(pkg_share, 'models/basic_mobile_bot_v2.urdf')
+  default_model_path = os.path.join(pkg_share, 'models/brazo_robotica.urdf')
   robot_name_in_urdf = 'basic_mobile_bot'
-  default_rviz_config_path = os.path.join(pkg_share, 'rviz/urdf_config.rviz')
+  default_rviz_config_path = os.path.join(pkg_share, 'rviz/urdf_brazo_config.rviz')
  
   # Launch configuration variables specific to simulation
   model = LaunchConfiguration('model')
@@ -54,7 +54,7 @@ def generate_launch_description():
     
   declare_use_sim_time_cmd = DeclareLaunchArgument(
     name='use_sim_time',
-    default_value='True',
+    default_value='false',
     description='Use simulation (Gazebo) clock if true')
 
    
@@ -69,6 +69,15 @@ def generate_launch_description():
     parameters=[{'use_sim_time': use_sim_time, 
     'robot_description': Command(['xacro ', model])}],
     arguments=[default_model_path])
+    
+
+  start_joint_state_publisher_cmd = Node(
+    condition=IfCondition(use_robot_state_pub),
+    package='joint_state_publisher',
+    executable='joint_state_publisher',
+    parameters=[{'use_sim_time': use_sim_time, 
+    'robot_description': Command(['xacro ', model])}],
+    arguments=[default_model_path])    
 
   # Launch RViz
   start_rviz_cmd = Node(
@@ -91,6 +100,7 @@ def generate_launch_description():
   ld.add_action(declare_use_sim_time_cmd)
 
   # Add any actions
+  ld.add_action(start_joint_state_publisher_cmd)
   ld.add_action(start_robot_state_publisher_cmd)
   ld.add_action(start_rviz_cmd)
 
