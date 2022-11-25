@@ -27,7 +27,7 @@ kdO = 0
 EO = 0
 eO_1 = 0
 
-v0 = 2.5
+v0 = 2.40
 alpha = 0.9
 
 class ControladorVelocidad(Node):
@@ -118,7 +118,7 @@ class ControladorVelocidad(Node):
         #LLanta derecha
         right_wheel_vel=(v-(w*l))/r
         
-        print("v:", v)
+        print("w:", w)
         #print("LLANTA IZQUIERDA:",left_wheel_vel)
         #print("LLANTA DERECHA:", right_wheel_vel)
         ####################################    

@@ -17,6 +17,7 @@ def generate_launch_description():
     default_rviz_config_path = os.path.join(pkg_share, 'rviz/urdf_config.rviz')
     robot_localization_file_path = os.path.join(pkg_share, 'config/ekf_real.yaml') 
     robot_slam_file_path = os.path.join(pkg_share, 'params/mapper_params_online_sync.yaml') 
+    params_urg_file_path = os.path.join(pkg_share, 'params/urg.yaml') 
     default_rviz_config_path = os.path.join(pkg_share, 'rviz/urdf_config.rviz')
     
     model = LaunchConfiguration('model')
@@ -110,7 +111,16 @@ def generate_launch_description():
         executable='rviz2',
         name='rviz2',
         output='screen',
-        arguments=['-d', rviz_config_file])             
+        arguments=['-d', rviz_config_file])
+        
+    start_urg_node_cmd=Node(
+        name= 'urg_node',
+        package = 'urg_node',
+        executable = 'urg_node_driver',
+        # output = 'screen',
+        parameters = [params_urg_file_path],
+        remappings=[('scan','scan'),])
+   	             
         
     ld = LaunchDescription()
   # Declare the launch options
@@ -120,7 +130,7 @@ def generate_launch_description():
     ld.add_action(declare_use_robot_state_pub_cmd) 
     ld.add_action(declare_use_sim_time_argument)
     
-
+    ld.add_action(start_urg_node_cmd)
     ld.add_action(start_com_optitrack)
     ld.add_action(start_robot_localization_cmd)
     ld.add_action(node_tf2_map2odom)    

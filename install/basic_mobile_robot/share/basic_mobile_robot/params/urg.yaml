@@ -1,0 +1,14 @@
+urg_node:
+  ros__parameters:
+    serial_port: /dev/ttyACM0	
+    laser_frame_id: lidar_link
+    angle_max: 2.32
+    angle_min: -2.32
+    range_min: 0.120000
+    range_max: 3.5
+    skip: 1
+    time_increment: 0
+    scan_time: 0
+    publish_intensity: true
+    calibration_time: false
+    cluster: 1
