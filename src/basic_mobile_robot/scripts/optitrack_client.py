@@ -29,7 +29,7 @@ class OptiTrackNode(Node):
 
     def publish_coordinates(self):
         #Request the server the coordinates from markers 1 and 2
-        self.markerNumbers = [8,2]
+        self.markerNumbers = [8,4]
         self.s.sendall(json.dumps(self.markerNumbers).encode())
 
         #Receive the coordinates
@@ -48,7 +48,8 @@ class OptiTrackNode(Node):
         odom.child_frame_id= "base_footprint"
 
         # set the position
-        odom.pose.pose.position.x = self.M1_Pos[0]
+        #odom.pose.pose.position.x = self.M1_Pos[0]
+        odom.pose.pose.position.x = -self.M1_Pos[0] #Para pruebas con SLAM
         odom.pose.pose.position.y = self.M1_Pos[2]
         odom.pose.pose.position.z = self.M1_Pos[1]
         odom.pose.pose.orientation.x = self.M1_Ori[0]

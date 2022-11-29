@@ -14,11 +14,10 @@ def generate_launch_description():
     default_launch_dir = os.path.join(pkg_share, 'launch')
     default_model_path = os.path.join(pkg_share, 'models/basic_mobile_bot_v2.urdf')
     robot_name_in_urdf = 'basic_mobile_bot'
-    default_rviz_config_path = os.path.join(pkg_share, 'rviz/urdf_config.rviz')
+    default_rviz_config_path = os.path.join(pkg_share, 'rviz/urdf_config_slam.rviz')
     robot_localization_file_path = os.path.join(pkg_share, 'config/ekf_real.yaml') 
     robot_slam_file_path = os.path.join(pkg_share, 'params/mapper_params_online_sync.yaml') 
-    params_urg_file_path = os.path.join(pkg_share, 'params/urg.yaml') 
-    default_rviz_config_path = os.path.join(pkg_share, 'rviz/urdf_config.rviz')
+    params_urg_file_path = os.path.join(pkg_share, 'params/urg.yaml')
     
     model = LaunchConfiguration('model')
     rviz_config_file = LaunchConfiguration('rviz_config_file')

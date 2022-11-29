@@ -9,7 +9,7 @@ import sys
 import rclpy
 from rclpy.node import Node
 from nav_msgs.msg import Odometry
-from tf_transformations import quaternion_from_euler
+#from tf_transformations import quaternion_from_euler
 from geometry_msgs.msg import Point, Pose, Quaternion, Twist, Vector3
 
 
@@ -83,7 +83,6 @@ class ArduinoCommunication(Node):
            odom.pose.pose.position.x = incomingDic["x"]
            odom.pose.pose.position.y = incomingDic["y"]
            odom.pose.pose.position.z = 0.0
-           quat=quaternion_from_euler(0,0,incomingDic["z"])
            odom.pose.pose.orientation.x = 0.0
            odom.pose.pose.orientation.y = 0.0
            odom.pose.pose.orientation.z = 0.0
