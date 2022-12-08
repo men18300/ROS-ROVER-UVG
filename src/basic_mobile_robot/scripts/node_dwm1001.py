@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import math
 from math import sin, cos, pi
 
@@ -115,9 +116,9 @@ class DWM1001Node(Node):
     	print("X = "+str(C[0]))
     	print("Y = "+str(C[1]))
     	odom=Odometry()
-        odom.header.stamp = self.get_clock().now().to_msg()
-        odom.header.frame_id = "odom"
-        odom.child_frame_id= "base_footprint"
+    	odom.header.stamp = self.get_clock().now().to_msg()
+    	odom.header.frame_id = "odom"
+    	odom.child_frame_id= "base_footprint"
     	# set the position
     	odom.pose.pose.position.x = C[0]
     	odom.pose.pose.position.y = C[1]

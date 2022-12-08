@@ -34,6 +34,7 @@ ament_python_install_package(${PROJECT_NAME})
 #Install pytho executables
 install(PROGRAMS
   scripts/hardware_arduino_wheels.py
+  scripts/node_dwm1001.py
   scripts/optitrack_client.py
   DESTINATION lib/${PROJECT_NAME}
 )
