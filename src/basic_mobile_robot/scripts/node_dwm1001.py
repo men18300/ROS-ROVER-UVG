@@ -104,7 +104,7 @@ class DWM1001Node(Node):
     def __init__(self):
     
         super().__init__('Nodo_dwm1001')
-        self.publisher_ = self.create_publisher(Odometry, '/odom_nati', 50) 
+        self.publisher_ = self.create_publisher(Odometry, "/wheel/odometry", 50) 
         timer_period = 0.5  # seconds
         self.i = 0.0
         self.timer_ = self.create_timer(timer_period, self.publish_message)
@@ -115,7 +115,9 @@ class DWM1001Node(Node):
     	print("X = "+str(C[0]))
     	print("Y = "+str(C[1]))
     	odom=Odometry()
-    	odom.header.frame_id = "odom_nati"
+        odom.header.stamp = self.get_clock().now().to_msg()
+        odom.header.frame_id = "odom"
+        odom.child_frame_id= "base_footprint"
     	# set the position
     	odom.pose.pose.position.x = C[0]
     	odom.pose.pose.position.y = C[1]
@@ -125,7 +127,6 @@ class DWM1001Node(Node):
     	odom.pose.pose.orientation.z = 0.0
     	odom.pose.pose.orientation.w = 0.0
     	# set the velocity
-    	odom.child_frame_id = "base_link"
     	odom.twist.twist.linear.x = 0.0
     	odom.twist.twist.linear.y = 0.0
     	odom.twist.twist.angular.z = 0.0

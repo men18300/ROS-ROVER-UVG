@@ -47,3 +47,4 @@ def generate_launch_description():
         )
 
     ])
+#ros2 service call /map_saver/save_map nav2_msgs/srv/SaveMap "{map_topic: map, map_url: mapa_rover, image_format: pgm, map_mode: trinary, free_thresh: 0.25, occupied_thresh: 065}"    

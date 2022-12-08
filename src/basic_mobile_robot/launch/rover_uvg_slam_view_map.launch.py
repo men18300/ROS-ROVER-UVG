@@ -129,7 +129,6 @@ def generate_launch_description():
     ld.add_action(declare_use_robot_state_pub_cmd) 
     ld.add_action(declare_use_sim_time_argument)
     
-    ld.add_action(start_robot_localization_cmd)
     ld.add_action(start_robot_state_publisher_cmd)
     ld.add_action(start_rviz_cmd)
     
