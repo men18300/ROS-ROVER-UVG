@@ -21,14 +21,26 @@ theta=0.0
 
 #Para los calculos
 #PID posición
-kpO = 25.0
+kpO = 1.2
 kiO = 0.01 
 kdO = 0
 EO = 0
 eO_1 = 0
 
-v0 = 2.40
-alpha = 0.9
+#En simulacion
+v0 = 0.3
+alpha = 0.4
+
+real=0
+
+if real==1:
+    kpO = 25.0
+    kiO = 0.01 
+    kdO = 0
+
+    v0 = 2.40
+    alpha = 0.9
+
 
 class ControladorVelocidad(Node):
 
@@ -51,36 +63,15 @@ class ControladorVelocidad(Node):
         goal.x=8.0
         goal.y=-7.0
         
-        #Pruebas con real
-        goal.x=-0.1
-        goal.y=-0.1
+        #Coordenada deseada
+        #goal.x=-0.001
+        #goal.y=-0.001
 
     def publish_message(self):   
         global goal
         global x
         global y
         global theta
-        # inc_x=goal.x-x
-        # print(inc_x)
-        # inc_y=goal.y-y
-        # print(inc_y)
-        # angle_to_goal=atan2(inc_y,inc_x)
-        # print(angle_to_goal)
-        # print(theta)
-
-        
-        # if abs(angle_to_goal-theta)>0.1:
-        #     speed.linear.x=0.0
-        #     speed.angular.z=0.3
-        # else:
-        #     speed.linear.x=0.5
-        #     speed.angular.z=0.0
-        # self.publisher_.publish(speed)
-        # time.sleep(0.05)
-        
-
-        ##########################
-
         global eP
         global eP_1
         global eO_1
@@ -102,13 +93,19 @@ class ControladorVelocidad(Node):
         v = kP*eP;
         
         #Pruebas con real
+        
         #v=0.0;
         
         # Control de velocidad angular
         eO_D = eO - eO_1;
         EO = EO + eO;
         w = kpO*eO + kiO*EO + kdO*eO_D;
-        w=-w;
+        
+        #Para pruebas con el ROver UVG real
+        if real == 1:
+            w=-w
+        
+    
         #w=0.0;
         eO_1 = eO;
 

@@ -129,10 +129,10 @@ def generate_launch_description():
     ld.add_action(declare_use_robot_state_pub_cmd) 
     ld.add_action(declare_use_sim_time_argument)
     
-    ld.add_action(start_urg_node_cmd)
-    ld.add_action(start_com_optitrack)
+    #ld.add_action(start_urg_node_cmd)
+    #ld.add_action(start_com_optitrack)
     ld.add_action(start_robot_localization_cmd)
-    ld.add_action(node_tf2_map2odom)    
+    #ld.add_action(node_tf2_map2odom)    
     
     ld.add_action(start_robot_state_publisher_cmd)
     ld.add_action(start_sync_slam_toolbox_node)

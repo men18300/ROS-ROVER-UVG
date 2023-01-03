@@ -1,18 +1,12 @@
 #!/usr/bin/env python3
 from warnings import catch_warnings
 import rclpy
-#import rospy
 from rclpy.node import Node
-
 import socket
 import json
-
 from nav_msgs.msg import Odometry
 from geometry_msgs.msg import Point, Pose, Quaternion, Twist, Vector3
 
-
-
- 
 class OptiTrackNode(Node): 
     def __init__(self):
         super().__init__("optitrack_connection") 
@@ -48,8 +42,7 @@ class OptiTrackNode(Node):
         odom.child_frame_id= "base_footprint"
 
         # set the position
-        #odom.pose.pose.position.x = self.M1_Pos[0]
-        odom.pose.pose.position.x = -self.M1_Pos[0] #Para pruebas con SLAM
+        odom.pose.pose.position.x = self.M1_Pos[0]
         odom.pose.pose.position.y = self.M1_Pos[2]
         odom.pose.pose.position.z = self.M1_Pos[1]
         odom.pose.pose.orientation.x = self.M1_Ori[0]
@@ -57,8 +50,6 @@ class OptiTrackNode(Node):
         odom.pose.pose.orientation.z = -self.M1_Ori[1]
         odom.pose.pose.orientation.w = self.M1_Ori[3]
         
-        #COn el optritrack funciono ponerle negativo a z
-
         #Publish de Odometry in the topic
         self.publisher_.publish(odom)
 

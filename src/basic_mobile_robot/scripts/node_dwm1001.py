@@ -67,9 +67,6 @@ def get_X(s):
 		n1 = n1 + 1
 		i = i + 1
 	X_mm = ((Xa[3]*(2**24))+(Xa[2]*(2**16))+(Xa[1]*(2**8))+(Xa[0]))/1000 # Se pasa a decimal
-	#X_cm = X_mm/10 # se convierte a cm
-	#X_m = X_mm/1000 #se convierte a metro
-	#print(X)
 	return X_mm#, X_cm, X_m
 
 def get_Y(s):
@@ -80,9 +77,6 @@ def get_Y(s):
 		n2 = n2 + 1
 		i = i + 1
 	Y_mm = ((Ya[3]*(2**24))+(Ya[2]*(2**16))+(Ya[1]*(2**8))+(Ya[0]))/1000 # Se pasa a decimal
-	#Y_cm = Y_mm/10 # se convierte a cm
-	#Y_m = Y_mm/1000 #se convierte a metro
-	#print(Y)
 	return Y_mm#, Y_cm, Y_m
 
 def get_Z(s): 
@@ -93,9 +87,6 @@ def get_Z(s):
 		n3 = n3 + 1
 		i = i + 1
 	Z_mm = ((Za[3]*(2**24))+(Za[2]*(2**16))+(Za[1]*(2**8))+(Za[0]))/1000 # Se pasa a decimal
-	#Z_cm = Z_mm/10 # se convierte a cm
-	#Z_m = Z_mm/1000 #se convierte a metro
-	#print(Z)
 	return Z_mm#, Z_cm, Z_m
 
 
@@ -147,5 +138,3 @@ if __name__ == '__main__':
     main()
     
 
-
-#~/ws_dwm1001/src/pack_dwm1001/pack_dwm1001

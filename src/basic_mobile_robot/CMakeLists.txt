@@ -33,6 +33,9 @@ ament_python_install_package(${PROJECT_NAME})
 
 #Install pytho executables
 install(PROGRAMS
+  scripts/aruco_odom.py
+  scripts/aruco_odom_v2.py
+  scripts/aruco_odom_v3.py
   scripts/hardware_arduino_wheels.py
   scripts/node_dwm1001.py
   scripts/optitrack_client.py
