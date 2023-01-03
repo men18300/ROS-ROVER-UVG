@@ -23,7 +23,7 @@ ser.close()
 ser.open()
 e=subprocess.run(["bash ~/JeVoisArucoStream.sh"], shell=True)
 
-class DWM1001Node(Node):
+class ARUCO_NODE(Node):
     def __init__(self):
     
         super().__init__('Nodo_aruco')
